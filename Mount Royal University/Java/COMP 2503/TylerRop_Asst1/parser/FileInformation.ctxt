@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.params=filename
+comment0.target=FileInformation(java.lang.String)
+comment0.text=\r\n\ Basic\ constructor\ used\ to\ build\ the\ input\ file\ information\r\n\ @param\ filename\ the\ full\ path\ and\ name\ of\ the\ file\ to\ open\r\n\ @throws\ IOException\ if\ any\ input\ or\ output\ error\ occurs\r\n
+comment1.params=
+comment1.target=boolean[][]\ getGrid()
+comment1.text=\r\n\ gets\ the\ grid\ array\ and\ passes\ info\ from\ it\r\n
+comment2.params=
+comment2.target=java.util.ArrayList\ getRule()
+comment2.text=\r\n\ gets\ the\ array\ list\ and\ passes\ it\r\n
+comment3.params=filename
+comment3.target=void\ buildInformation(java.lang.String)
+comment3.text=\r\n\ build\ the\ input\ file\ information\r\n\ @param\ filename\ the\ full\ path\ and\ name\ of\ the\ file\ to\ open\r\n\ @throws\ IOException\r\n
+comment4.params=
+comment4.target=int\ getNumGenerations()
+comment5.params=fileIn
+comment5.target=void\ buildRules(java.util.Scanner)
+comment5.text=\r\n\ Builds\ all\ the\ rules\ based\ upon\ the\ file\ input\r\n\ @param\ fileIn\ the\ scanner\ class\ that\ is\ attached\ to\ the\ file\r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+numComments=7

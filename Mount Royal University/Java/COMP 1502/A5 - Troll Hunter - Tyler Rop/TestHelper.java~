@@ -1,0 +1,23 @@
+
+/**
+ * Write a description of class TestHelper here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+public class TestHelper
+{
+    public static void hitting(weapon weapon, int howManyTimesYouHit)
+    {
+        for (int i= 1; i <= howManyTimesYouHit; i++)
+        {
+            weapon.useCounter();
+            weapon.attackDamage();
+        }
+    }
+    
+    public static void battleMove(character character, String theMove)
+    {
+        character.battleChoice();
+    }
+}

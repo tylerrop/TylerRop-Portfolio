@@ -1,0 +1,38 @@
+
+/**
+ * creates a hero that the user plays as
+ * 
+ * @author (Tyler Rop) 
+ * @version (version 1)
+ */
+public class hero extends character
+{
+    /**
+     * Constructor for objects of class hero
+     */
+    public hero(String name, int health, int defenseLevel, int coins, weapon currWeapon)
+    {
+        super(name, health, defenseLevel, coins, currWeapon);
+    }
+
+    /**
+     * Method - getType
+     * returns the trolls type
+     */
+    public String getType()
+    {
+        //name of the user
+        String trollType = "Eddard Stark";
+
+        return trollType;
+    }
+
+    /**
+     * Method - battleChoice
+     * returns if the user wants to attack or defend
+     */
+    public String battleChoice()
+    {
+        return "attack";
+    }
+}

@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=useCount\ weaponName\ power\ weight
+comment0.target=axe(int,\ java.lang.String,\ int,\ int)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ axe\r\n
+comment1.params=
+comment1.target=int\ getWeaponPower()
+comment1.text=\r\n\ Method\ -\ getWeaponPower\r\n\ gives\ back\ the\ power\ of\ the\ weapon\r\n
+comment2.params=
+comment2.target=int\ attackDamage()
+comment2.text=\r\n\ Method\ -\ attackDamage\r\n\ calculates\ and\ returns\ the\ amount\ of\ damage\ that\ an\ axe\ can\ inflict\ on\ the\ opponant\ \r\n\ \r\n\ the\ damage\ that\ an\ axe\ can\ do\ depends\ on\ the\ axes\ power,\ weight,\ and\ the\ number\ of\ times\ it\ has\ been\ used\r\n\ \r\n
+numComments=3

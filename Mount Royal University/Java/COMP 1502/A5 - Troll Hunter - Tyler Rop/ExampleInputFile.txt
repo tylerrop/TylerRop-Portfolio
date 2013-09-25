@@ -1,0 +1,21 @@
+100
+50
+5
+SWORD,tiny,20,23
+2,2
+0,0
+2
+STORY_CAVE
+S1
+0,0
+5,3
+welcome to story cave 1
+BATTLE_CAVE
+B1
+6,2
+BESERKER
+Ralph
+50
+22
+7
+SWORD,PointyThing,6,2

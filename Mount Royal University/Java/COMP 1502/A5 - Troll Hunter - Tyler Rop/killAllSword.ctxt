@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=
+comment0.target=killAllSword()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ killasword\r\n
+comment1.params=
+comment1.target=int\ attackDamage()
+comment1.text=\r\n\ Method\ -\ attackDamage\r\n\ the\ sword\ does\ so\ much\ damage\ that\ you\ might\ be\ scared\ to\ use\ it.\r\n\ the\ sword\ always\ does\ this\ insane\ amount\ of\ damage,\ and\ is\ the\ ultimate\ troooooooooollllllHUNTER\!\!\!\!\!\!\!\!\!\!\ weapon.\r\n\ \r\n
+comment2.params=
+comment2.target=void\ useCounter()
+comment2.text=\r\n\ Method\ -\ useCounter\r\n\ the\ use\ count\ is\ always\ insanely\ high\ like\ the\ swords\ damage,\ this\ sword\ has\ been\ used\ for\ millions\ of\ years\ by\ heros\ of\ the\ dark\ ages\ to\ slay\ trolls.\r\n\ it\r\n\ \r\n
+comment3.params=
+comment3.target=int\ getWeaponPower()
+comment3.text=\r\n\ Method\ -\ getWeaponPower\r\n\ gives\ back\ the\ power\ of\ the\ weapon\r\n
+numComments=4

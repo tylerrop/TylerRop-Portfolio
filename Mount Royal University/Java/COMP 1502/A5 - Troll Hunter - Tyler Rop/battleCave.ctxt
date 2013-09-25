@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=troll\ row\ collumn
+comment0.target=battleCave(character,\ int,\ int)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ battleCave\r\n
+comment1.params=
+comment1.target=java.awt.Color\ getMapCaveColor()
+comment1.text=\r\n\ Method\ -\ getMapCaveColor\r\n\ sets\ the\ color\ that\ battle\ caves\ are\ on\ the\ world\ map\r\n
+comment2.params=hero
+comment2.target=void\ setUser(hero)
+comment2.text=\r\n\ Method\ -\ setUser\r\n\ the\ current\ user\ that\ can\ be\ moved\ into\ a\ story\ cave\r\n
+comment3.params=graphics
+comment3.target=void\ drawCave(display.DisplayGraphics)
+comment3.text=\r\n\ Method\ -\ drawCave\r\n\ displays\ the\ content\ of\ the\ cave\r\n
+comment4.params=display
+comment4.target=void\ executeUserInteraction(display.GuiInterface)
+comment4.text=\r\n\ Method\ -\ executeUserInteraction\r\n\ gets\ the\ user\ to\ intereact\ with\ the\ battle\ cave\ by\ fighing\ the\ troll\ in\ the\ cave\ (if\ the\ trol\ is\ alive)\r\n
+numComments=5

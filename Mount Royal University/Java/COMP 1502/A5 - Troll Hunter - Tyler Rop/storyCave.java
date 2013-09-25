@@ -1,0 +1,242 @@
+import java.awt.Color;
+import display.*;
+/**
+ * creates a story cave object
+ * 
+ * @author (Tyler Rop) 
+ * @version (version 3)
+ */
+public class storyCave extends Cave
+{
+    //color of a story cave
+    private Color caveColor = null;
+
+    //the row that the story cave is in
+    private int row;
+
+    //the collumn that the story cave is in
+    private int collumn;
+
+    //how much it costs the user to heal
+    private int healFee;
+
+    //the amount that it will cost the user to fix their weapon in the story cave
+    private int fixFee;
+
+    //the message that the story cave contains 
+    private String storyMessage;
+
+    //the hero object that is the player
+    private hero hero;
+
+    /**
+     * Constructor for objects of class storyCave
+     */
+    public storyCave(int row, int collumn, int healFee, int fixFee, String storyMessage)
+    {
+        super(row, collumn);
+
+        this.healFee = healFee;
+
+        this.fixFee = fixFee;
+
+        this.storyMessage = storyMessage;
+
+        hero = null;
+    }
+
+    
+    
+    /**
+     * Method - getMapCaveColor
+     * sets the caves color that will be displayed on the map
+     */
+    public Color getMapCaveColor()
+    {
+        //all story caves are grey on the map
+        caveColor = Color.GRAY;
+
+        return caveColor;
+    }
+
+    /**
+     * Method - drawCave
+     * draws the contents of the cave
+     * 
+     */
+    public void drawCave(DisplayGraphics graphics)
+    {
+        DisplayImage backgroundImage = new DisplayImage(graphics.getStoryDisplayDimensions());
+        
+        //the entire cave is set to grey so that the user has a visual aid to tell them that they are in a story cave
+        //this keeps cinsistancy with the map
+        for(int row = 0; row < backgroundImage.getHeight(); row++)
+        {
+            for(int col = 0; col < backgroundImage.getHeight(); col++)
+            {
+                backgroundImage.setColorAt(row, col, Color.GRAY);
+            }
+            graphics.drawImageInBackground(0,0, backgroundImage);
+        }
+    }
+
+    /**
+     * Method - setUser
+     * the current user that can be moved into a story cave
+     */
+    public void setUser(hero hero)
+    {
+        this.hero = hero;
+    }
+
+    /**
+     * Method - executeUserInteraction
+     * determines what the user wants to do in the story cave wit the users input
+     * will heal a user, repair a users weapon, or let the user simply continue through the cave (they can do any of the above in any order or amount)
+     */
+    public void executeUserInteraction(GuiInterface display)
+    {
+        //if the user wants to continue through the story cave
+        boolean moveOn = false;
+
+        //displays information about the story cave and the user that is relevant for the user in a story cave
+        display.setUserDisplayMessage(
+            "Story Cave\n\n" +    
+            storyMessage +
+            "\nHealing Cost: " + healFee + 
+            "\nWeapon Repair Cost: " + fixFee + "\n\n" +
+            hero.getName() +
+            "\nCoins: " + hero.getCoins() + 
+            "\nHealth: " + hero.getHealth() +
+            "\nWeapon Name: " + hero.getCurrWeapon().getWeaponName() + 
+            "\nWeapon Use Count: " + hero.getCurrWeapon().getUseCount());
+
+        //the button options that the user can select
+        String[] ch = {"Heal", "Fix Weapon", "Continue"};
+
+        //runs methods that allow the user to heal and repair their weapon untill the user clicks to continue out of the cave
+        while(moveOn == false)
+        {
+            //the choice that the user selects
+            String selectedChoice = display.getUserChoiceAction(ch, GuiInterface.STORY_SCREEN);
+
+            //if the user selects the option to heal themself
+            if(selectedChoice.equals("Heal"))
+            {
+                //make sure that the user has enough money to heal themself
+                if(hero.getCoins() >= healFee)
+                {
+                    //we get the users current health and add the amount of health that the user paid for and then set the health
+                    hero.setHealth(hero.getHealth() + healFee);
+
+                    //we subtract the cost of healthing from the users number of coins and set it
+                    hero.setCoins(hero.getCoins() - healFee);
+
+                    //relevant story cave and user info is printed out
+                    //a message telling the user that they have healed (and how much they have healed) is also printed out
+                    display.setUserDisplayMessage(
+                        "Story Cave\n\n" + 
+                        storyMessage +
+                        "\nHealing Cost: " + healFee + 
+                        "\nWeapon Repair Cost: " + fixFee + "\n\n" +
+                        hero.getName() +
+                        "\nCoins: " + hero.getCoins() + 
+                        "\nHealth: " + hero.getHealth() +
+                        "\nWeapon: " + hero.getCurrWeapon().getWeaponName() +
+                        "\nWeapon Use Count: " + hero.getCurrWeapon().getUseCount() +
+                        "\n\nYou have healed " + healFee + " health.");
+                }
+                //this section of code runs if the user does not have enough money to pay for healing themself
+                else
+                {
+                    //relevant story cave and user info is printed out
+                    //a message telling the user that they did not have enough money to heal themself is printed out
+                    display.setUserDisplayMessage(
+                        "Story Cave\n\n" + 
+                        storyMessage +
+                        "\nHealing Cost: " + healFee + 
+                        "\nWeapon Repair Cost: " + fixFee + "\n\n" +
+                        hero.getName() +
+                        "\nCoins: " + hero.getCoins() + 
+                        "\nHealth: " + hero.getHealth() +
+                        "\nWeapon: " + hero.getCurrWeapon().getWeaponName() +
+                        "\nWeapon Use Count: " + hero.getCurrWeapon().getUseCount() +
+                        "\n\nYour coin purse lacks sufficient funds to heal yourself");
+                }
+            }
+
+            //user selects the option that they want to fix their weapon
+            else if(selectedChoice.equals("Fix Weapon"))
+            {
+                //if the user has enough money to fix their weapon
+                if(hero.getCoins() >= fixFee)
+                {
+                    //if the users weapon is not already brand new (no use)
+                    if(hero.getCurrWeapon().getUseCount() - fixFee >= 0)
+                    {
+                        //we get the users weapon and and fix it by the amount that the user paid to fix it by
+                        hero.getCurrWeapon().setUseCount(hero.getCurrWeapon().getUseCount() - fixFee);
+
+                        //we deduct the cost of fixing the from the number of coins that the user has
+                        hero.setCoins(hero.getCoins() - fixFee);
+
+                        //relevant info about the cave and user is printed to the screen, a message telling the user that their weapon was fixed prints too
+                        display.setUserDisplayMessage(
+                            "Story Cave\n\n" + 
+                            storyMessage +
+                            "\nHealing Cost: " + healFee + 
+                            "\nWeapon Repair Cost: " + fixFee + "\n\n" +
+                            hero.getName() +
+                            "\nCoins: " + hero.getCoins() + 
+                            "\nHealth: " + hero.getHealth() +
+                            "\nWeapon: " + hero.getCurrWeapon().getWeaponName() +
+                            "\nWeapon Use Count: " + hero.getCurrWeapon().getUseCount() +
+                            "\n\nYour weapon has been fixed.");
+                    }
+                }
+
+                //if the user does not have enough money to fix their weapon
+                if(hero.getCoins() < fixFee)
+                {
+                    //relevant info about the cave and user is printed to the screen
+                    //a message telling the user that they didnt have enough money to fix their weapon is fixed too
+                    display.setUserDisplayMessage(
+                        "Story Cave\n\n" + 
+                        storyMessage +
+                        "\nHealing Cost: " + healFee + 
+                        "\nWeapon Repair Cost: " + fixFee + "\n\n" +
+                        hero.getName() +
+                        "\nCoins: " + hero.getCoins() + 
+                        "\nHealth: " + hero.getHealth() +
+                        "\nWeapon: " + hero.getCurrWeapon().getWeaponName() +
+                        "\nWeapon Use Count: " + hero.getCurrWeapon().getUseCount() +
+                        "\n\nYour coin purse lacks sufficient funds to fix your weapon");
+                }
+
+                //this checks to make sure that the user cannot heal their weapon over its usecount limit (0)
+                if(hero.getCurrWeapon().getUseCount() - fixFee <= 0)
+                {
+                    //relevant info about the cave and user is printed to the screen
+                    //a message telling the user that they repaired their weapon as much as it could be
+                    display.setUserDisplayMessage(
+                        "Story Cave\n\n" + 
+                        storyMessage +
+                        "\nHealing Cost: " + healFee + 
+                        "\nWeapon Repair Cost: " + fixFee + "\n\n" +
+                        hero.getName() +
+                        "\nCoins: " + hero.getCoins() + 
+                        "\nHealth: " + hero.getHealth() +
+                        "\nWeapon: " + hero.getCurrWeapon().getWeaponName() +
+                        "\nWeapon Use Count: " + hero.getCurrWeapon().getUseCount() +
+                        "\n\nYour weapon is already perfect so it cannot be repaired anymore.");
+                }               
+            }
+            //the user indicates that they want to continue
+            else if(selectedChoice.equals("Continue"))
+            {
+                //the boolean is set to true, ending the loop and the user is then asked to move to a new cave by selecting a direction for a new cave to go to
+                moveOn = true;
+            }
+        }
+    }
+}

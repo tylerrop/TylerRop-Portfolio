@@ -1,0 +1,31 @@
+@charset "utf-8";
+/*
+	Imports
+*/
+@import url("resets.css");
+/*
+	Always Used
+*/
+body { background: #79694C; }
+#page-wrap { margin: 0 auto; width:960px; }
+h2 { color: #fff; font: 30px Arial, Helvetica, sans-serif; margin: 20px 0 40px 0; }
+/*
+	Basic Elements
+*/
+#content { width: 960px; position: absolute; top: 224px; }
+/*
+	Nav / Menu Fade
+*/
+ul#nav li, ul#nav li a 				{ background: url(../images/nav-sprite.png) no-repeat left top;  height: 67px; width: 192px; }
+ul#nav li							{ float: left;  border: 1px solid #243e3b; border-left: none;}
+ul#nav li a							{ display: block; text-indent: -9999px; }
+
+ul#nav li.home						{ background-position: -1px -1px; border-left: 1px solid #243e3b; }
+ul#nav li.about						{ background-position: -194px -1px; }
+ul#nav li.contact					{ background-position: -387px -1px; }
+ul#nav li.freebies		 			{ background-position: -580px -1px; }
+
+ul#nav li.home a					{ background-position: -1px -69px; }
+ul#nav li.about a					{ background-position: -194px -69px; }
+ul#nav li.contact a					{ background-position: -387px -69px; }
+ul#nav li.freebies a				{ background-position: -580px -69px; }

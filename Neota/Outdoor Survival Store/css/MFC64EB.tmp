@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.totalContainer
+{
+	width:884px;
+	height:auto;
+	min-height:100px;
+	margin-left:auto;
+	margin-right:auto;
+	background-color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.insideContainer
+{
+	width:884px;
+	height:auto;
+	min-height:300px;
+	box-shadow:0 0 4px 2px #65635D;
+}
+
+.topNav
+{
+	width:884px;
+	height:40px;
+	background-color:#c6c6c6;
+	font-size:14px;
+	color:#FFF;
+}
+
+.topNav a
+{
+	text-decoration:none;
+	border:none;
+	margin-top:8px;
+}
+
+.topNav a:hover
+{
+	color:#000;
+	text-decoration:none;
+	border:none;
+}
+
+#navlist
+{
+	margin-top:12px;
+	display:inline-block;
+}
+
+#navlist li
+{
+display: inline;
+list-style-type: none; 
+margin-left:25px;
+}
+
+#navlist li a
+{
+	text-decoration:none;
+	border:none;
+	color:#FFF;
+	margin-top:8px;
+}
+
+#navlist li a:hover
+{
+	text-decoration:none;
+	border:none;
+	color:#000;
+}
+
+.mainNav
+{
+	widows:884px;
+	height:127px;
+	background-image:url(../images/navbar.png);
+	background-repeat:no-repeat;
+}
+
+.rightNav
+{
+	width:606px;
+	height:19px;
+	display:inline-block;
+	float:right;
+	margin-top:60px;
+}
+
+.slideshow
+{
+	width:884px;
+	height:405px;
+}
+
+.bottomHolder
+{
+	width:884px;
+	height:auto;
+}
+
+.dealBox
+{
+	width:556;
+	height:370px;
+	display:inline-block;
+	float:left;
+}
+
+.socialBox
+{
+	width:259px;
+	height:367px;
+	display:inline-block;
+	float:right;
+}
+
+.footer
+{
+	width:220px;
+	height: 20px;
+	float:right;
+}

@@ -1,0 +1,73 @@
+ import static org.junit.Assert.*;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+/**
+ * The test class swordTest.
+ *
+ * @author  (Tyler Rop)
+ * @version (version 1)
+ */
+public class swordTest
+{
+    private sword sworder;
+    private sword betterSword;
+    
+    /**
+     * Default constructor for test class swordTest
+     */
+    public swordTest()
+    {
+    }
+
+    /**
+     * Sets up the test fixture.
+     *
+     * Called before every test case method.
+     */
+    @Before
+    public void setUp()
+    {
+        sworder = new sword(0, "narsil", 1, 1);
+        
+        betterSword = new sword(0, "BetterSword",12,3);
+    }
+
+    /**
+     * Tears down the test fixture.
+     *
+     * Called after every test case method.
+     */
+    @After
+    public void tearDown()
+    {
+    }
+    
+    @Test
+    public void first_test_for_first_hit_should_do_1_point_of_damage()
+    {
+        int damageIfHit = sworder.attackDamage();
+        
+        assertEquals(1, damageIfHit);
+    }
+    
+    @Test
+    public void when_a_sword_hits_10_times_it_does_26_points_of_damage()
+    {
+        TestHelper.hitting(betterSword, 10);
+        
+        assertEquals(26, betterSword.attackDamage());
+    }
+    
+    @Test
+    public void when_sword_first_is_repaired_it_still_does_26_point_of_damage()
+    {
+        TestHelper.hitting(betterSword, 10);
+        
+        betterSword.repair();
+        
+        assertEquals(26, betterSword.attackDamage());
+    }
+}
+

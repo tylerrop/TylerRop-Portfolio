@@ -1,0 +1,35 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<title>Nav / Menu Fade</title>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js?ver=1.4.2'></script>
+<script type="text/javascript">
+$(document).ready(function(){ 
+	
+	$("ul#nav li a").css({"opacity" : 0}).hover(function(){
+		$(this).stop().animate({"opacity" : 1}, 200); //Change fade-in speed
+	
+		}, function(){
+		$(this).stop().animate({"opacity" : 0}, 100);//Change fade-out speed
+	
+	});
+	
+});
+</script>
+</head>
+<body>
+	<div id="page-wrap">
+		<div id="content">
+            <h2>Nav / Menu Fade</h2>
+            <ul id="nav">
+              <li class="home"><a href="#">Blog</a></li>
+              <li class="about"><a href="#">About</a></li>
+              <li class="contact"><a href="#">Contact</a></li>
+              <li class="freebies"><a href="#">Freebies</a></li>
+            </ul>
+		</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=row\ collumn\ healFee\ fixFee\ storyMessage
+comment0.target=storyCave(int,\ int,\ int,\ int,\ java.lang.String)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ storyCave\r\n
+comment1.params=
+comment1.target=java.awt.Color\ getMapCaveColor()
+comment1.text=\r\n\ Method\ -\ getMapCaveColor\r\n\ sets\ the\ caves\ color\ that\ will\ be\ displayed\ on\ the\ map\r\n
+comment2.params=graphics
+comment2.target=void\ drawCave(display.DisplayGraphics)
+comment2.text=\r\n\ Method\ -\ drawCave\r\n\ draws\ the\ contents\ of\ the\ cave\r\n\ \r\n
+comment3.params=hero
+comment3.target=void\ setUser(hero)
+comment3.text=\r\n\ Method\ -\ setUser\r\n\ the\ current\ user\ that\ can\ be\ moved\ into\ a\ story\ cave\r\n
+comment4.params=display
+comment4.target=void\ executeUserInteraction(display.GuiInterface)
+comment4.text=\r\n\ Method\ -\ executeUserInteraction\r\n\ determines\ what\ the\ user\ wants\ to\ do\ in\ the\ story\ cave\ wit\ the\ users\ input\r\n\ will\ heal\ a\ user,\ repair\ a\ users\ weapon,\ or\ let\ the\ user\ simply\ continue\ through\ the\ cave\ (they\ can\ do\ any\ of\ the\ above\ in\ any\ order\ or\ amount)\r\n
+numComments=5

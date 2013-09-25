@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ test_drawCard_fullDeck()
+comment1.params=
+comment1.target=void\ test_drawCard_emptyDeck()
+comment2.params=
+comment2.target=void\ test_addCard()
+comment3.params=
+comment3.target=void\ test_isEmpty()
+comment4.params=
+comment4.target=void\ test_for_noDuplicate_cards_after_create()
+numComments=5

@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.params=useCount\ weaponName
+comment0.target=weapon(int,\ java.lang.String)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ weapons\r\n
+comment1.params=
+comment1.target=int\ getUseCount()
+comment2.params=newCount
+comment2.target=int\ setUseCount(int)
+comment3.params=
+comment3.target=java.lang.String\ getWeaponName()
+comment4.params=
+comment4.target=void\ setWeaponName()
+comment5.params=
+comment5.target=void\ useCounter()
+comment5.text=\r\n\ Method\ -\ useCounter\r\n\ adds\ to\ the\ use\ count\ of\ the\ weapon\r\n
+comment6.params=
+comment6.target=void\ repair()
+comment6.text=\r\n\ Method\ -\ repair\r\n\ repairs\ a\ weapon\r\n
+comment7.params=
+comment7.target=int\ getWeaponPower()
+comment7.text=\r\n\ Method\ -\ getWeaponPower\r\n\ gives\ back\ the\ power\ of\ the\ weapon\r\n
+comment8.params=
+comment8.target=int\ attackDamage()
+comment8.text=\r\n\ Method\ -\ attackDamage\r\n\ calcuating\ the\ amount\ of\ dsamage\ that\ a\ weapon\ does\r\n
+numComments=9

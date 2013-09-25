@@ -1,0 +1,54 @@
+import java.util.Scanner;
+import java.io.*;
+import java.awt.Color;
+import display.*;
+import java.util.InputMismatchException;
+import java.util.NoSuchElementException;
+/**
+ * Write a description of class TestGameExample here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+
+public class TestGameExample
+{   
+    public static void main(String[] args)throws IOException
+    {
+  
+            try
+            {
+                
+                control gameControl = new control();
+                gameControl.start();
+                
+                
+                
+        
+                
+
+            }
+            catch(Exception ex)
+            {
+                ex.printStackTrace();
+            }
+            /*
+            //if any of the exceptions below are cought then th loop simply asks
+            catch (FileNotFoundException e) 
+            {
+            }
+            catch(InputMismatchException i)
+            {
+            }
+            catch(NoSuchElementException n)
+            {
+            }
+            catch (NullPointerException p)
+            {
+            }
+            catch(Throwable t)
+            {
+            }*/
+      
+    }
+}

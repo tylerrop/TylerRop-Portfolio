@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=
+comment0.target=battle()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ battle\r\n
+comment1.params=user\ troll\ userBattleChoice\ trollBattleChoice
+comment1.target=void\ fight(character,\ character,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Method\ -\ fight\r\n\ has\ the\ user\ and\ troll\ objects\ battle\ to\ the\ death\r\n
+numComments=2

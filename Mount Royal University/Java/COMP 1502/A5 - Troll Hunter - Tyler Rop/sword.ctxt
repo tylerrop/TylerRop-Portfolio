@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=useCount\ weaponName\ power\ length
+comment0.target=sword(int,\ java.lang.String,\ int,\ int)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ sword\r\n
+comment1.params=
+comment1.target=int\ getWeaponPower()
+comment1.text=\r\n\ Method\ -\ getWeaponPower\r\n\ gives\ back\ the\ power\ of\ the\ weapon\r\n
+comment2.params=
+comment2.target=int\ attackDamage()
+comment2.text=\r\n\ Method\ -\ attackDamage\r\n\ calcualtes\ the\ amount\ of\ damage\ that\ a\ sword\ can\ inflict\r\n\ the\ damage\ amount\ depends\ on\ the\ swords\ power,\ length,\ and\ usecount\r\n\ \r\n
+numComments=3

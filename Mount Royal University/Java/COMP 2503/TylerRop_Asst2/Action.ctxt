@@ -1,0 +1,20 @@
+#BlueJ class context
+comment0.params=move
+comment0.target=Action(Action.ActionType)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Action\r\n\ move\ \ \ \ -\ deaing\ a\ card\r\n\ \r\n\ @param\ Action\ move\ is\ the\ menu\ choice\ that\ the\ user\ made\r\n
+comment1.params=move\ to
+comment1.target=Action(Action.ActionType,\ int)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Action\r\n\ move\ -\ dealt\ card\ to\ pile\r\n\ move\ -\ dealt\ card\ to\ foundation\r\n\ \r\n\ @param\ Action\ move\ is\ the\ menu\ choice\ that\ the\ user\ made\r\n\ @param\ int\ pile/foundation\ is\ the\ destination\ that\ the\ user\ added\ the\ card\ to\r\n
+comment2.params=move\ from\ to
+comment2.target=Action(Action.ActionType,\ int,\ int)
+comment2.text=\r\n\ Constructor\ for\ objects\ of\ class\ Action\r\n\ \r\n\ @param\ int\ to\ -\ the\ pile\ \#\ that\ the\ card\ was\ added\ to\r\n\ @param\ int\ from\ -\ the\ pile\ the\ card\ was\ sent\ from\r\n
+comment3.params=
+comment3.target=Action.ActionType\ getActionType()
+comment3.text=\r\n\ getMove\r\n\ \r\n\ gets\ the\ Action\ move\ and\ returns\ it\r\n
+comment4.params=
+comment4.target=int\ getFrom()
+comment4.text=\r\n\ getFrom\r\n\ \r\n\ gets\ the\ int\ from\ and\ returns\ it\r\n
+comment5.params=
+comment5.target=int\ getTo()
+comment5.text=\r\n\ getTo\r\n\ \r\n\ gets\ the\ int\ to\ and\ returns\ it\r\n
+numComments=6

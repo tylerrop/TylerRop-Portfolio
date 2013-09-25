@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=
+comment0.target=void\ test_cardDisplayString()
+comment0.text=\r\n\ Test\ to\ make\ sure\ that\ the\ display\ string\ is\ proper\ for\r\n\ different\ card\ configurations\r\n
+comment1.params=
+comment1.target=void\ test_isSmallerThan()
+comment2.params=
+comment2.target=void\ test_isSmallerThanByOne()
+comment3.params=
+comment3.target=void\ test_isOppositeSuit()
+numComments=4

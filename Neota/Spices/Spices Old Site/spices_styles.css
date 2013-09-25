@@ -1,0 +1,248 @@
+@charset "UTF-8";
+#content {
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+	float: left;
+}
+#container {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	color: #000000;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+#header {
+	height: 200px;
+	width: 800px;
+}
+#logo {
+	background-image: url(images/logo.png);
+	height: 200px;
+	width: 223px;
+	float: left;
+}
+#himage {
+	background-image: url(images/header.png);
+	float: left;
+	height: 200px;
+	width: 577px;
+}
+#lpanel {
+	background-color: #333333;
+	float: left;
+	width: 223px;
+}
+#rpanel {
+	float: left;
+	width: 577px;
+}
+#nav {
+	float: left;
+	height: 304px;
+	width: 223px;
+}
+#greybox {
+	background-image: url(images/greybox.png);
+	float: left;
+	height: 73px;
+	width: 223px;
+}
+#sw {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #FFFFFF;
+	float: left;
+	width: 223px;
+	text-align: center;
+	padding-top: 5px;
+}
+#afftext {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #000000;
+	height: 73px;
+	width: 195px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left: 5px;
+}
+#content {
+	float: left;
+	width: 577px;
+}
+#bnav {
+	float: left;
+	height: 23px;
+	width: 577px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	padding-top: 5px;
+}
+.ralign {
+	text-align: right;
+	font-size: 12px;
+}
+.nav {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #FFFFFF;
+	text-align: right;
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+.openlanguage{ /*class added to contents of 2nd demo when they are open*/
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-align: right;
+	width: 199px;
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+.closedlanguage{ /*class added to contents of 2nd demo when they are closed*/
+	color: #FFFFFF;
+	text-align: right;
+	width: 199px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+.technology {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: right;
+	font-size: 14px;
+	color: #FFFFFF;
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+.thelanguage {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-align: right;
+	width: 199px;
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+.captions {
+	font-size: 10px;
+	text-align: center;
+}
+.red_title {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	color: #660000;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+.sub_title {
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 10px;
+}
+a.menu:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a.menu:hover {
+	color: #999999;
+	text-decoration: none;
+}
+a.bnav:link {
+	color: #333333;
+	text-decoration: none;
+}
+a.menu:visited {
+	color: #999999;
+	text-decoration: none;
+}
+a.bnav:hover {
+	color: #666666;
+	text-decoration: none;
+}
+a.bnav:visited {
+	color: #666666;
+	text-decoration: none;
+}
+.footerpadding {
+	padding-left: 5px;
+	font-weight: bold;
+	color: #333333;
+}
+#title_red {
+	font-size: 14px;
+	font-weight: bold;
+	color: #990000;
+	height: 20px;
+	width: 577px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+#sub_title {
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+	padding: 5px;
+	height: 15px;
+	width: 567px;
+}
+#main_content {
+	font-size: 16px;
+	width: 547px;
+	padding-left: 30px;
+}
+#leftpic {
+	float: left;
+	width: 288px;
+	text-align: center;
+	font-size: 10px;
+}
+#rightpic {
+	float: left;
+	width: 289px;
+	text-align: center;
+	font-size: 10px;
+}
+#title_red2 {
+	font-size: 14px;
+	font-weight: bold;
+	color: #990000;
+	height: 20px;
+	width: 577px;
+	padding-top: 20px;
+	padding-bottom: 5px;
+	text-align: center;
+}
+#main_content2 {
+	font-size: 16px;
+	width: 547px;
+	padding-left: 30px;
+}
+#grey_block {
+	background-color: #333333;
+	float: left;
+	height: 100%;
+	width: 223px;
+}
+#panel {
+	background-color: #333333;
+}

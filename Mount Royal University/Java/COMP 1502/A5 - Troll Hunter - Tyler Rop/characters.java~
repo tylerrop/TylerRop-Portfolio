@@ -1,0 +1,75 @@
+
+/**
+ * Write a description of class characters here.
+ * 
+ * @author (your name) 
+ * @version (a version number or a date)
+ */
+abstract public class characters
+{
+    //name of the character
+    protected String name;
+    
+    //amount of energy that the character has
+    protected int health;
+    
+    //defense level of character
+    protected int defenseLevel;
+    
+    //amount of coins the character has
+    protected int coins;
+    
+    /**
+     * Constructor for objects of class characters
+     */
+    public characters(String name, int health, int defenseLevel, int coins)
+    {
+       this.name = name;
+       
+       this.health = health;
+       
+       this.defenseLevel = defenseLevel;
+       
+       this.coins = coins;
+    }
+
+    //character name setter and getter
+    public String getName()
+    {
+        return name;
+    }
+    public void setName()
+    {
+        this.name = name;
+    }
+    
+    //character health setter and getter
+    public int getHealth()
+    {
+        return health;
+    }
+    public void setHealth()
+    {
+        this.health = health;
+    }
+    
+    //character defense level setter and getter
+    public int getDefenseLevel()
+    {
+        return defenseLevel;
+    }
+    public void setDefenseLevel()
+    {
+        this.defenseLevel = defenseLevel;
+    }
+    
+    //character coins setter and getter
+    public int getCoins()
+    {
+        return coins;
+    }
+    public void setCoins()
+    {
+        this.coins = coins;
+    }
+}

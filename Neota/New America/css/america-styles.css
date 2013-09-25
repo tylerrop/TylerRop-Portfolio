@@ -1,0 +1,221 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	background:#111111;
+	font-family:Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	color:#FFF;	
+	text-align:center;
+	text-transform:uppercase;
+	font-size:10px;
+	letter-spacing:1px;
+}
+
+a
+{
+	text-decoration:none;
+	border:none;
+}
+
+.mapBox
+{
+	width:880px;
+	height:461px;
+	background-image:url(../images/Map.png);
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin:-250.5px 0 0 -440px;
+}
+
+.mapLogo
+{
+	width:283px;
+	height:36px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	text-decoration:none;
+	border:none;
+	margin-top:188px;
+}
+
+.fittingPara
+{
+	width:100%;
+	font-size:10px;
+	margin-top:25px;
+	letter-spacing:1px;
+}
+
+.locationPara
+{
+	width:100%;
+	font-size:10px;
+	margin-top:20px;
+	letter-spacing:1px;
+	color:#8e8e8e;
+}
+
+.locationPara a
+{
+	color:#8e8e8e;
+	text-decoration:none;
+	border:none;
+}
+
+.locationPara a:hover
+{
+	color:#FFF;
+}
+
+.container1
+{
+	width:500px;
+	height:auto;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.container2
+{
+	width:380px;
+	height:auto;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.thankyouLogo
+{
+	width:283px;
+	height:36px;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	text-decoration:none;
+	border:none;
+	margin-top:70px;
+	margin-bottom:50px;
+}
+
+.textInput
+{
+	width:340px;
+	height:24px;
+	border:none;
+	font-family:Arial, Helvetica, sans-serif;
+	text-transform:uppercase;
+	font-size:10px;
+	color:#000;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+	padding-left:5px;
+}
+
+	.phoneInput
+	{
+		width:243px;
+		height:24px;
+		border:none;
+		font-family:Arial, Helvetica, sans-serif;
+		text-transform:uppercase;
+		font-size:10px;
+		color:#000;
+		display:inline-block;
+		margin-left:auto;
+		margin-right:auto;
+		padding-left:5px;
+		float:left;
+		margin-left:18px;
+		}
+			
+			.ageInput
+			{
+				display:inline-block;
+				float:right;
+				height:24px;
+				width:86px;
+				font-family:Arial, Helvetica, sans-serif;
+				text-transform:uppercase;
+				color:#000;
+				font-size:10px;
+				margin-right:17px;
+				margin-bottom:0px;
+			}
+
+form p
+{
+	text-align:left;
+	margin-left:17px;
+	color:#898989;
+	margin-bottom:5px;
+	margin-top:15px;
+	display:inline-block;
+	width:100%;
+	
+}
+
+.submit
+{
+	width:122px;
+	height:40px;
+	cursor:pointer;
+	background:url(../images/Continue.png) no-repeat;
+	opacity:0.5;
+	margin-top:25px;
+	border:none;
+	
+}
+
+.submit:hover
+{
+	opacity:1;
+}
+
+.locationLink
+{
+	color:#FFF;
+}
+
+.locationLink:hover
+{
+	color:#8E8E8E;
+}
+
+.tableDate
+{
+	width:295px;
+	height:24px;
+	margin-left:40.5px;
+	margin-top:19px;
+}
+
+	.tableDate tr
+	{
+		border-bottom:4px solid #111111;
+		height:24px;
+	}
+ 
+	.tableDate td
+	{
+		background:#FFF;
+		color:#0072bd;
+		text-align:center;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:10px;
+		padding-top:8px;
+		padding-bottom:8px;
+		height:8px;
+	}
+
+	.tableDate td:hover
+	{background:#111111;
+	color:#FFF;
+	cursor:pointer;
+	}
+	

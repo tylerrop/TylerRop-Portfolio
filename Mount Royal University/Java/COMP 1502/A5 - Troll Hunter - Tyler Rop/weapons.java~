@@ -1,0 +1,70 @@
+
+/**
+ * Write a description of class weapons here.
+ * 
+ * @author (Tyler Rop) 
+ * @version (version 2)
+ */
+abstract public class weapons
+{
+    // variable for the number of time that the weapon is used
+    protected int useCount;
+    
+    //name of the weapon
+    protected String weaponName;
+    
+    //how much it costs to repoair a weapon
+    protected static final int REPAIR_COST = 5;
+
+    /**
+     * Constructor for objects of class weapons
+     */
+    public weapons(int useCount, String weaponName)
+    {
+        // initialise instance variables
+        this.useCount = useCount;
+        
+        this.weaponName = weaponName;
+        
+    }
+    
+    //weapon use count setter and getter
+    public int getUseCount()
+    {
+        return useCount;
+    }
+    public void setUseCount()
+    {
+        this.useCount = useCount;
+    }
+    
+    //weapon name setter and getter
+    public String getWeaponName()
+    {
+        return weaponName;
+    }
+    public void setWeaponName()
+    {
+        this.weaponName = weaponName;
+    }
+   
+    /**
+     * adds to the use count
+     * 
+     */
+    public void useCounter()
+    {
+        useCount = useCount + 1;
+    }
+    
+    /**
+     * repairs a weapon!
+     * 
+     */
+    public void repair()
+    {
+        useCount = Math.max(0, useCount + REPAIR_COST);
+    }
+    
+    public abstract int attackDamage();
+}

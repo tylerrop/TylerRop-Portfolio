@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.params=wrong\ right
+comment0.target=Word(java.lang.String,\ java.lang.String)
+comment0.text=\r\n\ \r\n\ Constructor\ for\ objects\ of\ class\ Word\r\n\ \r\n\ @param\ String\ wrong\ -\ the\ incorrect\ spelling\ for\ a\ word\r\n\ @param\ String\ right\ -\ the\ correct\ spelling\ for\ a\ word\r\n
+comment1.params=r
+comment1.target=void\ setRight(java.lang.String)
+comment2.params=w
+comment2.target=void\ setWrong(java.lang.String)
+comment3.params=
+comment3.target=java.lang.String\ getRight()
+comment4.params=
+comment4.target=java.lang.String\ getWrong()
+comment5.params=
+comment5.target=int\ hashCode()
+comment6.params=ch
+comment6.target=int\ charValue(char)
+comment6.text=\r\n\ charValue\r\n\ \r\n\ returns\ the\ numerical\ value\ of\ a\ character\r\n\ \r\n\ @param\ char\ ch\ -\ the\ character\ that\ is\ to\ be\ changed\ to\ an\ integer\ value\r\n
+comment7.params=one
+comment7.target=boolean\ equals(java.lang.Object)
+comment7.text=\r\n\ equals\r\n\ \r\n\ simply\ compaires\ the\ hash\ code\ of\ one\ object\ to\ the\ hash\ code\ of\ another\ object\r\n\ \r\n\ @param\ Object\ one\ -\ object\ that\ is\ having\ it's\ hash\ value\ compaired\ with\r\n
+numComments=8

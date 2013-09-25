@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=row\ col
+comment0.target=Cave\ getCave(int,\ int)
+comment0.text=\r\n\ Method\ -\ getCave\r\n\ checks\ to\ see\ if\ a\ user\ can\ move\ to\ a\ cave\ in\ the\ 2d\ array\r\n\ if\ there\ is\ a\ cave\ around\ the\ user's\ location\ (not\ a\ null\ element\ in\ the\ array),\ then\ those\ cave(s)\ will\ be\ found\ and\ the\ user\ will\ be\ allowed\ to\ move\ to\ them\r\n
+comment1.params=
+comment1.target=void\ start()
+comment1.text=\r\n\ Method\ -\ start\r\n\ asks\ the\ user\ to\ select\ the\ text\ file\ for\ the\ game.\r\n\ sets\ the\ character\ at\ their\ start\ location.\r\n\ sets\ up\ the\ caves\ and\ the\ gui\r\n
+comment2.params=inFile
+comment2.target=weapon\ makeWeapon(java.util.Scanner)
+comment2.text=\r\n\ Method\ -\ makeWeapon\r\n\ reads\ from\ the\ input\ text\ file\ and\ makes\ the\ approprioate\ weapon\ based\ on\ the\ information\ from\ the\ text\ file\r\n
+comment3.params=selectedFile
+comment3.target=void\ readGameFile(java.io.File)
+comment3.text=\r\n\ Method\ -\ readGameFile\r\n\ reads\ in\ the\ txt\ file\ that\ the\ user\ types\ in.\r\n\ the\ read\ in\ file\ is\ used\ to\ create\ all\ of\ the\ user,\ troll,\ and\ cave\ settings\ for\ the\ game\r\n\ exceptioons\ are\ handled\ so\ that\ if\ the\ user\ enters\ something\ that\ is\ not\ a\ usable\ txt\ file,\ then\ the\ program\ will\ ask\ the\ user\ to\ enter\ a\ new\ file\ name\ (until\ they\ enter\ a\ valid\ file\ name)\r\n\ \r\n
+numComments=4

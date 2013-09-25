@@ -1,0 +1,60 @@
+
+/**
+ * creates the big boss troll
+ * 
+ * @author (Tyler Rop) 
+ * @version (version 1)
+ */
+public class bigBoss extends troll
+{
+    private String currentAttack;
+    
+    private int bossCounter = 0;
+    
+    /**
+     * Constructor for objects of class bigBoss
+     */
+    public bigBoss(String name, int health, int defenseLevel, int coins, weapon currWeapon)
+    {
+        super(name, health, defenseLevel, coins, currWeapon);   
+    }
+
+      /**
+     * Method - getType
+     * returns the trolls type
+     */
+    public String getType()
+    {
+        String trollType = "Big Boss";
+        
+        return trollType;
+    }
+    
+    /**
+     * Method - battleChoice
+     * the big boss troll always does a set attack and defend routine
+     */
+    public String battleChoice()
+    {
+        if (bossCounter == 0)
+        {
+            currentAttack = "1";
+            
+            bossCounter++;
+        }
+        else if (bossCounter == 1)
+        {
+            currentAttack = "0";
+            
+            bossCounter++;
+        }
+        else if (bossCounter == 2)
+        {
+            currentAttack = "0";
+            
+            bossCounter = 0;
+        }
+        
+        return currentAttack;
+    }
+}

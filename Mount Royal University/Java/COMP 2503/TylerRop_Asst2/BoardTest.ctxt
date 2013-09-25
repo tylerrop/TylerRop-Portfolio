@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=
+comment0.target=BoardTest()
+comment0.text=\r\n\ Default\ constructor\ for\ test\ class\ BoardTest\r\n
+comment1.params=
+comment1.target=void\ setUp()
+comment1.text=\r\n\ Sets\ up\ the\ test\ fixture.\r\n\r\n\ Called\ before\ every\ test\ case\ method.\r\n
+comment2.params=
+comment2.target=void\ tearDown()
+comment2.text=\r\n\ Tears\ down\ the\ test\ fixture.\r\n\r\n\ Called\ after\ every\ test\ case\ method.\r\n
+comment3.params=
+comment3.target=void\ add_dealt_card_to_a_pile()
+comment4.params=
+comment4.target=void\ move_card_from_one_pile_to_another()
+comment5.params=
+comment5.target=void\ move_card_from_a_pile_to_a_foundation()
+numComments=6

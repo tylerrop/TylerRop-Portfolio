@@ -1,0 +1,51 @@
+
+
+import static org.junit.Assert.*;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+/**
+ * The test class randomgerTest.
+ *
+ * @author  (your name)
+ * @version (a version number or a date)
+ */
+public class randomgerTest
+{
+    private randomger jim;
+    /**
+     * Default constructor for test class randomgerTest
+     */
+    public randomgerTest()
+    {
+    }
+
+    /**
+     * Sets up the test fixture.
+     *
+     * Called before every test case method.
+     */
+    @Before
+    public void setUp()
+    {
+        jim = new randomger();
+    }
+
+    /**
+     * Tears down the test fixture.
+     *
+     * Called after every test case method.
+     */
+    @After
+    public void tearDown()
+    {
+    }
+    
+    @Test
+    public void test_to_see_if_jim_the_randomger_does_random_attacks()
+    {
+        TestHelper.battleMove(jim,"attack");
+        
+        assertEquals("attack", jim.battleChoice());
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<title>Calgary Custom Exteriors | Home</title>
+
+
+
+<link href="css/cce_Styles.css" rel="stylesheet" type="text/css" />
+<link href="css/reset.css" rel="stylesheet" type="text/css" />
+<link rel="icon" 
+      type="image/png" 
+      href="images/favicon.png">
+
+
+<link href='http://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+
+<style>
+
+body
+{
+	background-color:#eae9e6;
+	font-family:'Raleway',Arial, Helvetica, sans-serif;
+}
+
+.tipDiv h3
+{
+	font-family:'Raleway',Arial,Helvetica, sans-serif;
+}
+
+#fadeToGrey
+{
+	background-color:#333;
+	width:959px;
+	height:653px;
+	margin-left:auto;
+	margin-right:auto;
+	z-index:-1;
+}
+
+#slideshow 
+		{ 
+		    margin-top: 130px;
+			margin-bottom:0;
+			margin-left:auto;
+			margin-right:auto; 
+		    position: relative; 
+		    width: 959px; 
+		    height:347px;
+		}
+		
+		
+		#slideshow > div 
+		{ 
+		   
+		    top: 10px; 
+		    left: 10px; 
+		    right: 10px;  
+		}
+
+</style>
+<script type="text/javascript" src="js/jqwery.js"></script>
+<script language="JavaScript" type="text/javascript">
+ $(document).ready(function(){
+ 
+ 
+ /*
+ 'images/1.jpg',
+ 'images/2.jpg',
+ 'images/3.jpg',
+ 'images/4.jpg'
+ */
+ 
+ 
+ var imgArr = new Array( // relative paths of images
+ 'images/1.jpg',
+ 'images/057.jpg',
+ 'images/035.jpg',
+ 'images/042.jpg',
+ 'images/043.jpg',
+  'images/044.jpg');
+ 
+ var preloadArr = new Array();
+ var i;
+ 
+ /* preload images */
+ for(i=0; i < imgArr.length; i++){
+ preloadArr[i] = new Image();
+ preloadArr[i].src = imgArr[i];
+ }
+ 
+ var currImg = 1;
+ var intID = setInterval(changeImg, 6000);
+ 
+ /* image rotator */
+ function changeImg(){
+ $('#totalContainer').animate({opacity: 0}, 1000, function(){
+ $(this).css('background','url(' + preloadArr[currImg++%preloadArr.length].src +') top center no-repeat');
+ }).animate({opacity: 1}, 1000);
+ }
+ 
+ });
+</script>
+
+
+ 
+ 
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script><style type="text/css"></style>
+
+<script>
+		$(function() {
+		
+			$("#slideshow > div:gt(0)").hide();
+	
+			setInterval(function() { 
+			  $('#slideshow > div:first')
+			    .fadeOut(1000)
+			    .next(9000)
+			    .fadeIn(2500)
+			    .end()
+			    .appendTo('#slideshow');
+			},  12000);
+			
+		});
+	</script>
+
+
+</head>
+
+<body>
+
+<div id="fadeToGrey">
+<!-- end of fadeToGrey-->
+</div>
+
+<div id="totalContainer" style="background:url(images/1.jpg) no-repeat; 
+	
+    background-repeat:no-repeat;
+	background-size:auto;
+	width:	959px;
+	margin-left:auto;
+	margin-right:auto;
+    top:-653px;
+	min-height:653px;
+	background-color:transparent;
+	position:relative;
+    z-index:0;
+    "
+><!-- end of total container div -->
+</div>
+
+
+
+<div class="indexContainer">
+
+    <a href="index.html">
+    <div class="logoContainer">
+    <!-- end of logo div -->
+    </div></a>
+
+
+
+           <div class="menuContainer">
+                <a href="index.html"><div class="homeLink"></div></a>
+    			<a href="about.html"><div class="aboutUsLink"></div></a>
+    			<a href="services.html"><div class="servicesLink"></div></a>
+    			<a href="contact.html"><div class="contactUsLink"></div></a>
+            <!-- end of menu container div -->
+            </div>
+    
+    
+<!--<br class="clear"/>-->
+    
+    <br clear="all"/>
+ 
+	<div id="slideshow">
+    	
+       
+                    <div class="tipDiv1">
+                        <a href="coupons/Coupon-1.pdf" target="_blank"><h3 style="font-family:Raleway, Arial, Helvetica, sans-serif">Full Metal Upgrade</h3>
+                        <img src="images/Arrow.png" width="15" height="15" alt="Tip Arrow" class="tipArrow" />   
+                        <br clear="all"/>
+                        <p>Update your exterior with our complete metal package and SAVE 15% on everything!<br/>
+This package includes soffit, fascia, and eavestrough!</p></a>
+
+                    <!-- end of tipDiv1-->
+                    </div>
+        					
+                            
+                            
+                            
+                            	<div class="tipDiv2">
+                                <h3 style="font-family:Raleway, Arial, Helvetica, sans-serif">Printable Coupons</h3>
+                                <img src="images/Arrow.png" width="15" height="15" alt="Tip Arrow" class="tipArrow" />   
+                                <br clear="all"/>
+                                <p>Print off any one of the following packages and save $250 on exterior upgrades!
+<br/><br/><a href="coupons/Coupon-2.pdf" target="_blank">Deal One: Roof, Soffit, Fascia, Eavesatrough.</a>
+<br/><br/><a href="coupons/Coupon-3.pdf" target="_blank">Deal Two: Roof and Siding</a>
+<br/><br/><a href="coupons/Coupon-4.pdf" target="_blank">Deal Three: Siding, Fascia, Soffit, Eavestrough</a>
+        
+                            <!-- end of tipDiv1-->
+                            </div>
+                            
+                            
+                             <div class="tipDiv5">
+                        <h3 style="font-family:Raleway, Arial, Helvetica, sans-serif">Save$1000's</h3>
+                        <img src="images/Arrow.png" width="15" height="15" alt="Tip Arrow" class="tipArrow" />   
+                        <br clear="all"/>
+                        
+						<p>For a limited time only, Calgary Custom Exteriors is offering unbeatable value on complete exterior renovations. You will literally save thousands of dollars while making your home beautiful and increasing it’s value</p>
+                        
+                        </div>
+                        
+                        
+                        <div class="tipDiv6">
+                        <h3 style="font-family:Raleway, Arial, Helvetica, sans-serif">Save with C.C.E.</h3>
+                        <img src="images/Arrow.png" width="15" height="15" alt="Tip Arrow" class="tipArrow" />   
+                        <br clear="all"/>
+                        
+						<p>Take advantage of one of our many awesome deals today and it will allow you to build the house of your dreams and still keep your wallet happy. </p>
+                        
+
+                    <!-- end of tipDiv1-->
+                    </div>
+                            
+                            
+                            
+                    
+                    
+    <!--end of slideShow div-->
+    </div>
+<!--end of index container-->    
+</div>
+
+
+
+<div class="indexFooter">
+
+<p>Copyright &copy; 2012. Calgary Custom Exteriors. All Rights Reserved &reg;.</p>
+
+<!-- end of footer div -->
+</div>
+
+
+	<div class="preloadedImages">
+    
+    <img src="images/Links-About-2.png" width="1" height="1" />
+    
+    <img src="images/Links-Contact-2.png" width="1" height="1" />
+    
+    <img src="images/Links-Home-2.png" width="1" height="1" />
+    
+    <img src="images/Links-PS-2.png" width="1" height="1" />
+    
+	<!--end of preloaded images-->
+    </div>
+
+
+
+</body>
+</html>

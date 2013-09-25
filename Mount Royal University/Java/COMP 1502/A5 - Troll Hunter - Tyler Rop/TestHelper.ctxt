@@ -1,0 +1,6 @@
+#BlueJ class context
+comment0.params=weapon\ howManyTimesYouHit
+comment0.target=void\ hitting(weapon,\ int)
+comment1.params=character\ theMove
+comment1.target=void\ battleMove(character,\ java.lang.String)
+numComments=2

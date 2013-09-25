@@ -1,0 +1,76 @@
+
+
+import static org.junit.Assert.*;
+import org.junit.After;
+import org.junit.Before;
+import org.junit.Test;
+
+/**
+ * The test class axeTest.
+ *
+ * @author  (your name)
+ * @version (a version number or a date)
+ */
+public class axeTest
+{
+    private axe axer;
+    
+    private axe betterAxe;
+    
+    /**
+     * Default constructor for test class axeTest
+     */
+    public axeTest()
+    {
+    }
+
+    //int useCount, String weaponName, int power, int weight
+    /**
+     * Sets up the test fixture.
+     *
+     * Called before every test case method.
+     */
+    @Before
+    public void setUp()
+    {
+        axer = new axe (0, "Axe of Doom", 12, 4);
+        
+        betterAxe = new axe (0, "Better Axe", 12, 4);
+    }
+
+    /**
+     * Tears down the test fixture.
+     *
+     * Called after every test case method.
+     */
+    @After
+    public void tearDown()
+    {
+    }
+    
+    @Test
+    public void first_test_for_this_axe_should_do_12_damage()
+    {
+        int damageIfHit = axer.attackDamage();
+        
+        assertEquals(12, damageIfHit);
+    }
+    
+    @Test
+    public void when_an_axe_hits_3_times_with_power12_and_weight_4_it_does_0_point_of_damage()
+    {
+        TestHelper.hitting(betterAxe, 3);
+        
+        assertEquals(0, betterAxe.attackDamage());
+    }
+    
+    @Test
+    public void when_an_axe_W4P12_is_repaired_it_still_does_0_damage()
+    {
+        TestHelper.hitting(betterAxe, 3);
+        
+         betterAxe.repair();
+        
+        assertEquals(0,betterAxe.attackDamage());
+    }
+}

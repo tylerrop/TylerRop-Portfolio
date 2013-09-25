@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=row\ collumn
+comment0.target=Cave(int,\ int)
+comment0.text=\r\n\ Cave\ Contructor\r\n\ reads\ in\ the\ caves\ row\ and\ collimn\ information\r\n
+comment1.params=hero
+comment1.target=void\ setUser(hero)
+comment1.text=\r\n\ Method\ -\ setUser\r\n\ sets\ a\ hero\ object\ in\ a\ cave\ (when\ used\ by\ the\ child\ cave\ classes)\r\n
+comment2.params=
+comment2.target=java.awt.Color\ getMapCaveColor()
+comment2.text=\r\n\ Method\ -\ getMapCaveColor();\r\n\ sets\ the\ color\ that\ the\ cave\ will\ be\ displayed\ as\ on\ the\ map\r\n
+comment3.params=graphics
+comment3.target=void\ drawCave(display.DisplayGraphics)
+comment3.text=\r\n\ Method\ -\ drawCave\r\n\ draws\ the\ contents\ of\ the\ cave\ for\ the\ user\ to\ see\r\n
+comment4.params=display
+comment4.target=void\ executeUserInteraction(display.GuiInterface)
+comment4.text=\r\n\ Method\ -\ executeUserInteraction\r\n\ \r\n\ handles\ the\ actions\ that\ the\ user\ selects\r\n
+numComments=5

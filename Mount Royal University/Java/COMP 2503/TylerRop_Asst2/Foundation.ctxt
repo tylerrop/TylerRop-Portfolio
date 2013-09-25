@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Foundation()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Foundation\r\n
+comment1.params=aCard
+comment1.target=boolean\ addCardToFoundation(gameUtil.Card)
+comment1.text=\r\n\ addCardToFoundation\r\n\ \r\n\ takes\ in\ a\ card\ object\ and\ adds\ it\ to\ the\ stack\ in\ the\ foundation\r\n\ \r\n\ @param\ Card\ aCard\ -\ the\ card\ to\ be\ added\ to\ the\ foundation\r\n
+comment2.params=
+comment2.target=gameUtil.Card\ removeCard()
+comment2.text=\r\n\ removeCard()\r\n\ \r\n\ removes\ a\ card\ from\ a\ stack\r\n\ \r\n\ @param\ no\ parameters\r\n
+comment3.params=
+comment3.target=gameUtil.Card\ getTopFoundationCard()
+comment3.text=\r\n\ getTopFoundationCard\r\n\ \r\n\ peeks\ at\ the\ face\ up\ stack\ and\ returns\ the\ value\ of\ the\ top\ card\ as\ a\ String\r\n\ \r\n\ @param\ no\ parameters\r\n
+comment4.params=
+comment4.target=boolean\ isItEmpty()
+comment4.text=\r\n\ isItEmpty\r\n\ \r\n\ returns\ if\ the\ foundation\ is\ empty\ or\ not\r\n\ \r\n\ @param\ no\ param\r\n
+comment5.params=
+comment5.target=java.lang.String\ toString()
+numComments=6

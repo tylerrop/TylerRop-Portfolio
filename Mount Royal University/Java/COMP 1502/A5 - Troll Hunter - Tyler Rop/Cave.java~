@@ -1,0 +1,35 @@
+import java.awt.Color;
+import display.*;
+
+/**
+ * Base class for all caves in the game, you can change and add to this class as you see fit
+ * @author jkidney
+ * @version March 21, 2012
+ */
+
+
+public abstract class Cave 
+{
+
+    private int row;
+
+    private int collumn;
+
+    public Cave(int row, int collumn)
+    {
+        this.row = row;
+        
+        this.collumn = collumn;
+    }
+    
+    public abstract void setUser(hero hero);
+    
+    
+    public abstract Color getMapCaveColor();
+
+    public abstract void drawCave(DisplayGraphics graphics);
+
+    public void executeUserInteraction(GuiInterface display)
+    {
+    }
+}

@@ -1,0 +1,27 @@
+#BlueJ class context
+comment0.params=line\ wordLocation\ originalWord\ correctWord
+comment0.target=WrongWordFound(int,\ int,\ java.lang.String,\ java.lang.String)
+comment0.text=\r\n\ Basic\ constructor\ to\ set\ all\ information\ in\ one\ step\r\n\ \r\n\ @param\ line\ the\ line\ number\r\n\ @param\ wordLocation\ the\ location\ in\ the\ lin\ of\ the\ wrong\ word\r\n\ @param\ originalWord\ the\ wrong\ word\ found\r\n\ @param\ correctWord\ the\ found\ correct\ word\ from\ the\ BST\ lookup\r\n
+comment1.params=
+comment1.target=int\ getLine()
+comment10.params=arg0
+comment10.target=boolean\ equals(java.lang.Object)
+comment10.text=\r\n\ @return\ true\ if\ the\ two\ objects\ are\ exactly\ the\ same\r\n
+comment2.params=line
+comment2.target=void\ setLine(int)
+comment3.params=
+comment3.target=int\ getWordLocation()
+comment4.params=wordLocation
+comment4.target=void\ setWordLocation(int)
+comment5.params=
+comment5.target=java.lang.String\ getOriginalWord()
+comment6.params=originalWord
+comment6.target=void\ setOriginalWord(java.lang.String)
+comment7.params=
+comment7.target=java.lang.String\ getCorrectWord()
+comment8.params=correctWord
+comment8.target=void\ setCorrectWord(java.lang.String)
+comment9.params=
+comment9.target=java.lang.String\ toString()
+comment9.text=\r\n\ Returns\ a\ string\ representation\ of\ the\ object\ for\ use\ to\ output\ to\ the\ console\r\n\ Example\ return\ string\:\ <br>\r\n\ WrongWordFound\ [line\=1,\ wordLocation\=5,\ originalWord\=acheive,\ correctWord\=achieve]\r\n\r\n\ @return\ a\ string\ representation\ of\ the\ object\r\n
+numComments=11

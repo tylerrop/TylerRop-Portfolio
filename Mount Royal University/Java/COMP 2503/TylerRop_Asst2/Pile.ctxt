@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Pile()
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ Pile\r\n\ \r\n\ no\ parameters\r\n\ \r\n
+comment1.params=aCard\ settingUpBoard
+comment1.target=boolean\ addCardToFUp(gameUtil.Card,\ boolean)
+comment1.text=\r\n\ addCardToFUp\r\n\ \r\n\ takes\ in\ a\ card\ object\ and\ adds\ it\ to\ the\ stack\ in\ the\ pile\ that\ stores\ the\ face\ up\ cards\r\n\ \r\n\ @param\ Card\ aCard\ -\ the\ card\ that\ will\ be\ added\r\n\ @param\ boolean\ settingUpBoard\ -\ determines\ if\ the\ board\ has\ be\ dealt\ out\ or\ not\ yet\r\n
+comment2.params=aCard
+comment2.target=gameUtil.Card\ addCardToFDown(gameUtil.Card)
+comment2.text=\r\n\ addCardToFaceDown\r\n\ \r\n\ takes\ in\ a\ card\ object\ and\ adds\ it\ to\ the\ stack\ in\ the\ pile\ that\ stores\ the\ face\ down\ cards\r\n\ \r\n\ @param\ Card\ aCard\ -\ the\ card\ to\ be\ added\ to\ the\ facedown\ stack\r\n
+comment3.params=
+comment3.target=gameUtil.Card\ removeCard()
+comment3.text=\r\n\ removeCard()\r\n\ \r\n\ removes\ a\ card\ from\ a\ stack\r\n
+comment4.params=
+comment4.target=gameUtil.Card\ getTopFaceUpValue()
+comment4.text=\r\n\ getTopFaceUpValue\r\n\ \r\n\ peeks\ at\ the\ face\ up\ stack\ and\ returns\ the\ value\ of\ the\ top\ card\r\n\ \r\n\ @param\ no\ parameters\r\n
+comment5.params=
+comment5.target=boolean\ isTheFaceUpStackEmpty()
+comment5.text=\r\n\ isTheFaceUpStackEmpty\r\n\ \r\n\ checks\ to\ see\ if\ the\ facce\ up\ stack\ in\ the\ pile\ is\ empty\r\n\ @param\ no\ param\r\n
+comment6.params=
+comment6.target=boolean\ isTheFaceDownStackEmpty()
+comment6.text=\r\n\ isTheFaceDownStackEmpty\r\n\ \r\n\ checks\ to\ see\ if\ the\ face\ down\ stack\ in\ the\ pile\ is\ empty\r\n\ @param\ no\ param\r\n
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment7.text=\r\n\ toString\r\n\ \r\n\ overides\ default\ Pile\ toString\ method\ and\ displays\ the\ top\ upturned\ card\ and\ the\ \#\ of\ facedown\ cards\r\n\ \r\n\ @param\ no\ parameters\r\n
+numComments=8

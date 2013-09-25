@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=useCount\ weaponName\ power
+comment0.target=dagger(int,\ java.lang.String,\ int)
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ dagger\r\n
+comment1.params=
+comment1.target=int\ getWeaponPower()
+comment1.text=\r\n\ Method\ -\ getWeaponPower\r\n\ gives\ back\ the\ power\ of\ the\ weapon\r\n
+comment2.params=
+comment2.target=int\ attackDamage()
+comment2.text=\r\n\ Method\ -\ attackDamage\r\n\ the\ damage\ for\ an\ attack\ with\ a\ dagger\ is\ calculated\r\n\ \r\n
+numComments=3

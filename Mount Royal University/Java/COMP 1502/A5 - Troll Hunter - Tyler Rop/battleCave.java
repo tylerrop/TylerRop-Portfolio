@@ -1,0 +1,273 @@
+import java.awt.Color;
+import display.*;
+
+/**
+ * Write a description of class battleCave here.
+ * 
+ * @author (Tyler Rop) 
+ * @version (version 4)
+ */
+public class battleCave extends Cave
+{
+    //the color of the battle cave
+    private Color caveColor = null;
+
+    //indicator to see if the troll is dead or alive
+    private boolean trollIsDead = false;
+
+    //indicator to see if the hero/user is dead or alive
+    private boolean heroIsDead = false;
+
+    //the troll in the cave
+    private character troll;
+
+    //the user in the cave
+    private hero hero;
+
+    //the heros health amount
+    private int heroHealth;
+
+    //the use count of the heros weapon
+    private int heroUseCount;
+
+    //the amount of coins that the user has
+    private int heroCoins;
+
+    //the amount of health that the troll in the cave has
+    private int trollHealth;
+
+    //the trolls choice of attacking or defending
+    private String trollBattleChoice;
+
+    //the battle is created
+    private battle battle = new battle();
+
+    /**
+     * Constructor for objects of class battleCave
+     */
+    public battleCave(character troll, int row, int collumn)
+    {   
+        super(row, collumn);
+
+        this.troll = troll;
+
+        hero = null;
+    }
+
+    /**
+     * Method - getMapCaveColor
+     * sets the color that battle caves are on the world map
+     */
+    public Color getMapCaveColor()
+    {
+        //battle caves are set to red on the map
+        caveColor = Color.RED;
+
+        return caveColor;
+    }
+
+    /**
+     * Method - setUser
+     * the current user that can be moved into a story cave
+     */
+    public void setUser(hero hero)
+    {
+        this.hero = hero;
+    }
+
+    /**
+     * Method - drawCave
+     * displays the content of the cave
+     */
+    public void drawCave(DisplayGraphics graphics)
+    {
+        DisplayImage backgroundImage = new DisplayImage(graphics.getStoryDisplayDimensions());
+
+        //the contents of the cave are set to red to keep consistancy with the map so the user can reconize that theyre in a battle cave
+        for(int row = 0; row < backgroundImage.getHeight(); row++)
+        {
+            for(int col = 0; col < backgroundImage.getHeight(); col++)
+            {
+                backgroundImage.setColorAt(row, col, Color.RED);
+            }
+            graphics.drawImageInBackground(0,0, backgroundImage);
+        }
+    }
+
+    /**
+     * Method - executeUserInteraction
+     * gets the user to intereact with the battle cave by fighing the troll in the cave (if the trol is alive)
+     */
+    public void executeUserInteraction(GuiInterface display)
+    {
+        //the user is told that they are in a battle cave and is given information that is usefull to them 
+        display.setUserDisplayMessage(
+            "Battle Cave\n\n" +
+            hero.getName() +
+            "\nCoins: " + hero.getCoins() + 
+            "\nHealth: " + hero.getHealth() +
+            "\nWeapon Name: " + hero.getCurrWeapon().getWeaponName() + 
+            "\nWeapon Use Count: " + hero.getCurrWeapon().getUseCount() +
+            "\n\n" + troll.getName() +
+            "\nSpecies: " + troll.getType() +
+            "\nHealth: " + troll.getHealth()
+        );
+
+        //button optons to attack or defend
+        String[] ch = {"Attack", "Defend"};
+
+        //whie the troll is not dead or while the user is not dead the battle will continue 
+        while(trollIsDead == false && heroIsDead == false)
+        {
+            //the users input choice
+            String selectedChoice = display.getUserBattleAction();
+
+            //if the user clicks to attack
+            if(selectedChoice.equals("ATTACK"))
+            {
+                //hero move is set to attack (1) and the troll battle choice it gotten
+                battle.fight(hero, troll, "1", troll.battleChoice() );
+
+                heroHealth = hero.getHealth();
+
+                heroUseCount = hero.getCurrWeapon().getUseCount();
+
+                //here we find out if the troll is attacking (1) or defending (0)
+                trollBattleChoice = troll.battleChoice();
+                if(trollBattleChoice.equals("1"))
+                {
+                    trollBattleChoice = "attacks";
+                }
+                else
+                {
+                    trollBattleChoice = "defends";
+                }
+
+                //here we tell the user that theyre still in the battle cave and that theyhave attacked the troll and the troll has done some battle move too
+                display.setUserDisplayMessage(
+                    "Battle Cave\n\n" +
+                    hero.getName() +
+                    "\nCoins: " + hero.getCoins() + 
+                    "\nHealth: " + heroHealth +
+                    "\nWeapon Name: " + hero.getCurrWeapon().getWeaponName() + 
+                    "\nWeapon Use Count: " + heroUseCount +
+                    "\n\n" + troll.getName() +
+                    "\nSpecies: " + troll.getType() +
+                    "\nHealth: " + troll.getHealth() + "\n\n" +
+                    "You attack and the troll " + trollBattleChoice +"."
+                );
+
+            }
+
+            //if the user clicks to defend instead of attack the troll
+            if(selectedChoice.equals("DEFEND"))
+            {
+                //users battle choice is set to defend (0) and the trolls battle choice is gotten
+                battle.fight(hero, troll, "0", troll.battleChoice() );
+
+                heroUseCount = hero.getCurrWeapon().getUseCount();
+
+                //here we find out if the troll is attacking (1) or defending (0)
+                trollBattleChoice = troll.battleChoice();
+                if(trollBattleChoice.equals("1"))
+                {
+                    trollBattleChoice = "attacks";
+                }
+                else
+                {
+                    trollBattleChoice = "defends";
+                }
+
+                //here we tell the user that theyre still in the battle cave and that they have defended the troll and the troll has done some battle move too
+                display.setUserDisplayMessage(
+                    "Battle Cave\n\n" +
+                    hero.getName() +
+                    "\nCoins: " + hero.getCoins() + 
+                    "\nHealth: " + hero.getHealth() +
+                    "\nWeapon Name: " + hero.getCurrWeapon().getWeaponName() + 
+                    "\nWeapon Use Count: " + heroUseCount +
+                    "\n\n" + troll.getName() +
+                    "\nSpecies: " + troll.getType() +
+                    "\nHealth: " + troll.getHealth() + "\n\n" +
+                    "You defend and the troll " + trollBattleChoice +"."
+                );
+            }
+
+            //here the troll is checked to see if it is the boss troll.
+            //if the troll was a big boss and was killed by the user then the game ends and the user is given some info to tell them this.
+            //the user is only given the option to exit the game now
+            if(troll.getType().equals("Big Boss") && troll.getHealth() <= 0)
+            {
+                display.setUserDisplayMessage("You Win!!!\n\nCongradulations, you, Eddard Stark, have rid Winterfell of the worst troll of them all." +
+                    "\n\nNow you must head north to the Wall and help your bastard son Jon Snow to protect the seven kingdoms Westeros from more trolls, wildlings, mammoths, and white walkers...");
+
+                String[] choiceWinner = {};
+
+                String winningScreen = display.getUserChoiceAction(choiceWinner, GuiInterface.STORY_SCREEN);
+            }
+            
+            //check if the user is still alive and if the troll is dead
+            if(hero.getHealth() >= 0 && troll.getHealth() <= 0)
+            {
+                //the hero gets the coins that the troll had and adds them to their money purse
+                heroCoins = hero.getCoins() + troll.getCoins();   
+                hero.setCoins(heroCoins);
+
+                //the user is told how many coins they got from the dead troll and how many coins they have in total
+                display.setUserDisplayMessage("You have killed the troll!\nYou gained " + troll.getCoins() + " coins from the troll.\nYou now have " + hero.getCoins() + " coins.");
+
+                //the user is given the option to exchange their weapon with the trolls weapon or to simply move on out of the cave
+                String[] postBattleChoice = {"Take Troll Weapon: " + troll.getCurrWeapon().getWeaponName() + 
+                        "\n   |   Weapon Power: " + troll.getCurrWeapon().getWeaponPower() + 
+                        "\n   |   Use Count: " + troll.getCurrWeapon().getUseCount(), "Continue" };
+
+                //the users button choice
+                String userPostBattleChoice = display.getUserChoiceAction(postBattleChoice, GuiInterface.STORY_SCREEN);
+
+                //if the user clicks the button to change ther weapon for the trolls then the weapons are exchanged
+                if(userPostBattleChoice.equals("Take Troll Weapon: " + troll.getCurrWeapon().getWeaponName() + 
+                    "\n   |   Weapon Power: " + troll.getCurrWeapon().getWeaponPower() + 
+                    "\n   |   Use Count: " + troll.getCurrWeapon().getUseCount() ))
+                {
+                    hero.setCurrWeapon(troll.getCurrWeapon() );
+                }
+
+                //the troll is set to dead
+                trollIsDead = true;
+            }
+
+            //if the user and the troll are both dead
+            if(hero.getHealth() <= 0 && troll.getHealth() <= 0)
+            {
+                //the user is told that they killed the troll and that they are both dead
+                display.setUserDisplayMessage("You slay the troll with a mighty attack, but you die a painful death as your wounds overtake our life force.\n\n GAME OVER");
+                
+                //user is only given the button to exit the game
+                String[] bothDead = { };
+
+                display.getUserChoiceAction(bothDead, GuiInterface.STORY_SCREEN);
+
+                //the hero/user is set as dead
+                heroIsDead = true;
+
+                //the troll in the cave is set as dead
+                trollIsDead = true;
+            }
+
+            //if the user dies but the troll is still alive
+            if(hero.getHealth() <= 0)
+            {
+                //user is told how the troll wrecked their face and killed them
+                display.setUserDisplayMessage("The troll has stomped out your insignificant life.\n\nGAME OVER");
+
+                //user is only given the button to exit the game
+                String[] deadHero = { };
+
+                display.getUserChoiceAction(deadHero, GuiInterface.STORY_SCREEN);
+
+                //the hero/user is set as dead
+                heroIsDead = true;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+100
+50
+5
+SWORD,tiny,10,3
+12,12
+0,0
+4
+STORY_CAVE
+Story cave 1 name
+0,0
+5,3
+welcome to story cave 1
+BATTLE_CAVE
+Battle cave 1 name
+0,1
+BESERKER
+Ralph
+50
+30
+12
+AXE,The Head Chopper,3,5
+BATTLE_CAVE
+Battle cave 2 name
+1,1
+RANDOMGER
+Betty
+23
+34
+45
+KILL_ALL
+BATTLE_CAVE
+Battle cave 3 name
+1,0
+BOSS
+Jordan
+99
+48
+89
+SWORD,Narsil,12,

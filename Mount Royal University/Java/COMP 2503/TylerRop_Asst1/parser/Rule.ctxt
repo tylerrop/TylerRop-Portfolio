@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.params=
+comment0.target=boolean\ getAppliesTo()
+comment1.params=
+comment1.target=boolean\ getAction()
+comment10.params=
+comment10.target=java.lang.String\ toString()
+comment2.params=
+comment2.target=void\ setAppliesTo_Alive()
+comment3.params=
+comment3.target=void\ setAppliesTo_Empty()
+comment4.params=
+comment4.target=void\ setAction_Alive()
+comment5.params=
+comment5.target=void\ setAction_Dead()
+comment6.params=
+comment6.target=int\ getNumNeighbors()
+comment7.params=numNeighbors
+comment7.target=void\ setNumNeighbors(int)
+comment8.params=
+comment8.target=int\ getCompare()
+comment9.params=compare
+comment9.target=void\ setCompare(int)
+numComments=11

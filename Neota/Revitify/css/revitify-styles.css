@@ -1,0 +1,420 @@
+@charset "utf-8";
+/* CSS Document */
+
+.container
+{
+	width:1042px;
+	height:auto;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+
+.topBox
+{
+	width:1000px;
+	margin-left:auto;
+	margin-right:auto;
+	height:192px;
+}
+
+	/*.topBox ul
+	{
+		font-family: Arial, Helvetica, sans-serif;
+		color:#FFF;
+		width:100%;
+		margin-top:54px;
+	}
+		
+		.topBox ul li
+		{
+			font-family: Arial, Helvetica, sans-serif;
+			color:#FFF;
+			display: inline;
+			list-style-type: none;
+			margin-right:47px;
+			font-weight:400;
+		}
+		
+			.topBox ul li a
+			{
+				font-family:Arial, Helvetica, sans-serif;
+				font-weight:400;
+				color:#FFF;
+				text-decoration:none;
+				text-transform:uppercase;
+				font-size:16px;
+				font-weight:500;
+				letter-spacing:2px;
+				
+			}
+				
+				.topBox ul li a:hover
+				{
+					color:#f0a948;
+				}
+				
+				*/
+				
+				
+				.topBox ul
+	{
+		font-family: Arial, Helvetica, sans-serif;
+		color:#FFF;
+		width:100%;
+		margin-top:54px;
+	}
+		
+		.topBox ul li
+		{
+			font-family: Arial, Helvetica, sans-serif;
+			color:#FFF;
+			display: inline;
+			list-style-type: none;
+			margin-right:28px;
+			float:left;
+			
+			
+		}
+		
+			.topBox ul li a
+			{
+				font-family:Arial, Helvetica, sans-serif;
+				font-weight:400;
+				color:#FFF;
+				text-decoration:none;
+				text-transform:uppercase;
+				font-size:16px;
+				
+				letter-spacing:2px;
+				
+			}
+				
+				.topBox ul li a:hover
+				{
+					color:#f0a948;
+				}
+
+.logo
+{
+	text-decoration:none;
+	border:none;
+	display:inline-block;
+	float:left;
+	margin-top:50px;
+}
+
+
+.shopping-cart-1
+{
+	width:223px;
+	height:34px;
+	display:block;
+	float:right;
+}
+
+.extendedCart
+{
+	width:223px;
+	display:block;
+	float:right;
+	height:151px;
+	background:#e5e5e5;
+}
+
+.smallDrops
+{
+	width:62px;
+	height:117px;
+	float:left;
+	display:inline-block;
+}
+
+.bottleText
+{
+	width:161px;
+	height:10px;
+	color:#215881;
+	margin-top:13px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:700;
+}
+.bottleRatio
+{
+	width:161px;
+	height:10px;
+	color:#215881;
+	margin-top:5px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:200;
+	font-style:italic;
+}
+
+.mathBox
+{
+	width:161px;
+	height:30px;
+	display:inline-block;
+	float:right;
+	margin-top:5px;
+}
+.amount
+{
+	width:30px;
+	padding-top:6px;
+	height:24px;
+	font-size:15px;
+	text-align:center;
+	color:#959595;
+	display:inline-block;
+	float:left;
+	background-color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+.equalsBox
+{
+	width:58px;
+	height:22px;
+	display:inline-block;
+	float:right;
+	padding-left:22px;
+	background-image:url(../images/equals.jpg);
+	background-repeat:no-repeat;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	color:#215881;
+	text-align:center;
+	padding-top:8px;
+}
+
+.checkoutButton
+{
+	width:102px;
+	height:21px;
+	 display:inline-block;
+	 float:right;
+	 margin-right:59px;
+	 margin-top:11px;
+}
+.homeText
+{
+	width:633px;
+	height:auto;
+	min-height:400px;
+	display:inline-block;
+	float:left;
+	margin-left:20px;
+	margin-top:71px;
+}
+
+.productImage
+{
+	width:256px;
+	height:461px;
+	display:inline-block;
+	float:right;
+	margin-right:20px;
+	margin-top:71px;
+}
+
+	.fruitBox
+	{
+		width:221px;
+		height:115px;
+		display:inline-block;
+		float:left;
+		background-image:url(../images/Box-1.png);
+		padding-left:125px;
+		background-repeat:no-repeat;
+		padding-top:19px;
+		padding-bottom:19px;
+		padding-right:10px;
+		margin-right:17.5px;
+		margin-bottom:143px;
+	}
+	
+	.dropsBox
+	{
+		width:220px;
+		height:94px;
+		padding-top:19px;
+		padding-bottom:19px;
+		padding-left:93px;
+		padding-right:14px;
+		background-image:url(../images/Box-2.png);
+		background-repeat:no-repeat;
+		margin-top:12px;
+		margin-right:17.5px;
+		float:left;
+		display:inline-block;
+		margin-bottom:143px;
+		
+	}
+		
+		.waistBox
+		{
+			width:189px;
+			height:94px;
+			padding-top:19px;
+			padding-bottom:19px;
+			padding-left:121px;
+			padding-right:14px;
+			background-image:url(../images/Box-3.png);
+			background-repeat:no-repeat;
+			margin-top:12px;
+			float:right;
+			display:inline-block;
+			margin-bottom:143px;
+		}
+		
+		
+/*About page styles*/
+
+.contactContentBox
+{
+	width:960px;
+	padding:20px;
+	height:auto;
+	min-height:100px;
+	margin-top:30px;
+	margin-left:20px;
+}
+	
+
+.aboutContentBox
+{
+	width:652px;
+	height:auto;
+	min-height:300px;
+	background:#FFF;
+	display:inline-block;
+	float:left;
+	margin-top:30px;
+	margin-left:20px;
+	padding:20px;
+	margin-bottom:60px;
+}
+
+.socialBox
+{
+	display:inline-block;
+	float:right;
+	width:298px;
+	height:30px;
+	margin-top:30px;
+	margin-right:20px;
+	border-bottom:12px solid #FFF;
+}
+
+
+.socialTwitterUpdate
+{
+	width:252px;
+	height:18px;
+	display:inline-block;
+	float:right;
+	background-color:#00bff3;
+	background:url(../images/Twitter.png);
+	background-repeat:no-repeat;
+	margin-right:20px;
+	padding-left:46px;
+	padding-top:8px;
+	color:#FFF;
+	text-transform:uppercase;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	letter-spacing:1px;
+	font-weight:700;
+}
+	.socialTwitterText
+	{
+		display:inline-block;
+		float:right;
+		width:231px;
+		height:auto;
+		margin-right:20px;
+		background-color:#FFF;
+		margin-top:0px;
+		padding: 15px 21px 15px 46px;
+		color: #959595;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:14px;
+		line-height:18px;
+		
+	}
+		.socialTwitterText a
+		{
+			color:#959595;
+			text-decoration:none;
+		}
+			
+			.socialTwitterText a:hover
+			{
+				color:#00bff3;
+				text-decoration:none;
+			}
+				
+.italic
+{
+	font-style:italic;
+}
+
+
+.socialFacebookUpdate
+{
+	width:252px;
+	height:18px;
+	display:inline-block;
+	float:right;
+	background-color:#00bff3;
+	background:url(../images/facebook.png);
+	background-repeat:no-repeat;
+	margin-right:20px;
+	padding-left:46px;
+	padding-top:8px;
+	color:#FFF;
+	text-transform:uppercase;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	letter-spacing:1px;
+	font-weight:700;
+}
+	.socialFacebookText
+	{
+		display:inline-block;
+		float:right;
+		width:231px;
+		height:auto;
+		margin-right:20px;
+		background-color:#FFF;
+		margin-top:0px;
+		padding: 15px 21px 15px 46px;
+		color: #959595;
+		font-family:Arial, Helvetica, sans-serif;
+		font-size:14px;
+		line-height:18px;
+		
+	}
+		.socialFacebookText a
+		{
+			color:#959595;
+			text-decoration:none;
+		}
+			
+			.socialFacebookText a:hover
+			{
+				color:#458ccc;
+				text-decoration:none;
+			}
+			
+
+.bottomMargin
+{
+	width:100%;
+	display:block;
+	height:70px;
+	background-color:#666;
+}

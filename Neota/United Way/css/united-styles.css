@@ -1,0 +1,211 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	background:url(../img/Background-Tile.jpg);
+	background-repeat:repeat;
+}
+
+.topBox
+{
+	width:1000px;
+	height:640px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.logoBox
+{
+	width:1000px;
+	height:121px;
+	padding-top:0px;
+	background-image:url(../img/Logo2.png);
+	background-position:bottom;
+	background-repeat:no-repeat;
+	margin-top:0px;
+	position:static;
+	display:block;
+	clear:both;
+}
+
+.shareBox
+{
+	width:182px;
+	height:60px;
+	display:inline-block;
+	float:right;
+	position:static;
+}
+
+.videoBox
+{
+	width:974px;
+	height:421px;
+	background-color:#FFF;
+	margin-top:40px;
+	display:inline-block;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:-312px;
+	position:relative;
+	z-index:50;
+	padding:13px;
+	-moz-margin-top:-332px;
+	margin-bottom:35px;
+}
+
+.liveMap
+{
+	width:217px;
+	height:170px;
+	display:inline-block;
+	float:right;
+	overflow:hidden;
+	margin-top:-22px;
+	position:relative;
+	z-index:51;
+}
+
+.followParadeTitle
+{
+	width:257px;
+	height:56px;
+	display:inline-block;
+	float:right;
+	margin-right:-36px;
+	background-image:url(../img/FollowtheParade.png);
+	background-repeat:no-repeat;
+	position:relative;
+	z-index:90;
+	margin-top:-10px;
+}
+
+.liveVideoBox
+{
+	width:749px;
+	height:422px;
+	display:inline-block;
+	float:left;
+	background-color:#666;
+}
+
+.slideshow
+{
+	width:100%;
+	height:161px;
+	position:relative;
+	z-index:50;
+	background:url(../img/slideshow.jpg);
+	margin-top:25px;
+}
+
+.streamBox
+{
+	width:1030px;
+	padding-left:27px;
+	padding-right:27px;
+	height:758px;
+	margin-left:auto;
+	margin-right:auto;
+	background-image:url(../img/LivePhotoStream2.png);
+	position:relative;
+	z-index:30;
+	margin-top:-180px;
+}
+
+	.newest
+	{
+		width:100px;
+		height:37px;
+		display:inline-block;
+		float:left;
+		margin-top:193px;
+		cursor:default;
+		
+	}
+
+	.oldest
+	{
+		width:100px;
+		height:37px;
+		display:inline-block;
+		float:right;
+		margin-top:193px;
+		cursor:default;
+		
+		
+	}
+	
+.twitterBox
+{
+	overflow:hidden;
+	width:220px;
+	height:229px;
+	float:right;
+	display:inline-block;
+	position:relative;
+	z-index:70;
+}
+
+.transBox
+{
+	width:1000px;
+	height:177px;
+	margin-left:13.5px;
+	background: url(../img/grey.png);
+	background-repeat:repeat;
+	border-top-left-radius:10px;
+	border-top-right-radius:10px;
+	position:relative;
+	display:inline-block;
+	margin-top:16px;
+	z-index:32;
+}
+
+.middleLine
+{
+	width:1px;
+	height:120px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:28.5px;
+}
+
+.sayingTwitter
+{
+	width:100%;
+	height:84px;
+	position:relative;
+	z-index:50;
+	background-image:url(../img/WhatWereSaying.png);
+	background-position:center;
+	margin-top:-349px;
+}
+
+.bottomLogos
+{
+	width:488px;
+	height:42px;
+	display:block;
+	margin-left:246px;
+	margin-right:auto;
+	background-color:#FFF;
+	bottom:0;
+	position:absolute;
+	padding:10px;
+}
+
+.sponsors
+{
+	width:100%;
+	height:20px;
+	color:#FFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	text-transform:uppercase;
+	text-align:center;
+	margin-top:250px;
+	display:block;
+	font-weight:700;
+}

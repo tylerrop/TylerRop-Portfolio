@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.params=fileName
+comment0.target=SpellChecker(java.lang.String)
+comment1.params=inFile
+comment1.target=void\ readThroughFile(java.util.Scanner)
+comment1.text=\r\n\ readThroughFile\r\n\ \r\n\ goes\ through\ the\ input\ file\ with\ the\ provided\ scanner\ for\ the\ file\r\n\ \r\n\ @param\ Scanner\ inFile\ -\ reads\ through\ the\ provided\ txt\ file\ that\ contains\ the\ correct\ and\ incorrect\ spelling\ for\ words\r\n
+comment2.params=file
+comment2.target=java.util.ArrayList\ checkFile(java.lang.String)
+comment2.text=\r\n\ checkFile\r\n\ \r\n\ adds\ found\ wrong\ words\ into\ an\ arraylist\ for\ storage\ from\ a\ txt\ file\r\n\ \r\n\ @param\ String\ file\ -\ the\ file\ that\ is\ being\ read\ through\r\n
+comment3.params=
+comment3.target=java.lang.String\ toString()
+numComments=4

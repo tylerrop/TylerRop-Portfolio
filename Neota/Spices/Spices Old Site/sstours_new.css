@@ -1,0 +1,133 @@
+@charset "UTF-8";
+#container {
+	background-color: #333333;
+	width: 800px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.prop {
+	height: 600px;
+	width: 1px;
+}
+#himage {
+	float: left;
+}
+#body {
+	width: 800px;
+}
+#menu {
+	float: left;
+	width: 223px;
+}
+#logo {
+	float: left;
+	width: 223px;
+}
+.openlanguage{ /*class added to contents of 2nd demo when they are open*/
+	color: #FFFFFF;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	text-align: right;
+	width: 199px;
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+.closedlanguage{ /*class added to contents of 2nd demo when they are closed*/
+	color: #FFFFFF;
+	text-align: right;
+	width: 199px;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+#content {
+	background-color: #FFFFFF;
+	float: right;
+	width: 577px;
+}
+#greybox {
+	float: left;
+	height: 73px;
+	width: 223px;
+}
+.propcontent {
+	height: 370px;
+	width: 1px;
+}
+#afftext {
+	height: 73px;
+	width: 200px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #999999;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+#sw {
+	font-size: 10px;
+	color: #FFFFFF;
+	text-align: center;
+	width: 223px;
+	height: 30px;
+	float: left;
+}
+#footer {
+	font-size: 10px;
+	color: #000000;
+	background-color: #00FF66;
+	width: 800px;
+	height: 30px;
+}
+.technology {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: right;
+	font-size: 14px;
+	color: #FFFFFF;
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+}
+
+.thelanguage {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-align: right;
+	width: 199px;
+	padding-top: 5px;
+	padding-right: 20px;
+	padding-bottom: 5px;
+	padding-left: 5px;
+	}
+	
+	a.menu:link {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+a.menu:hover {
+	color: #999999;
+	text-decoration: none;
+}
+a.bnav:link {
+	color: #333333;
+	text-decoration: none;
+}
+a.menu:visited {
+	color: #999999;
+	text-decoration: none;
+}
+a.bnav:hover {
+	color: #666666;
+	text-decoration: none;
+}
+a.bnav:visited {
+	color: #666666;
+	text-decoration: none;
+}

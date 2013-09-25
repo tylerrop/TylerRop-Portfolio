@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.params=grid
+comment0.target=CellStorage(boolean[][])
+comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ CellStorage]\r\n\ \r\n\ copies\ the\ booleans\ from\ the\ 2d\ boolean\ array\ in\ FileInformation\ and\ makes\ Cell\ objects\ and\ puts\ them\ in\ a\ new\ 2d\ Cell\ array\ of\ the\ same\ size\r\n\ \r\n\ @param\ boolean\ grid[][]\ array\ from\ FoleInformation\r\n\ \r\n
+comment1.params=row\ col
+comment1.target=boolean\ checkLocation(int,\ int)
+comment1.text=\r\n\ checks\ the\ cells\ position\ in\ the\ 2d\ array\ cellStorage\r\n\ if\ the\ cell\ is\ out\ of\ bounds\ then\ of\ the\ 2d\ array\ it\ is\ set\ as\ dead\r\n\ \r\n\ @param\ int\ int\r\n
+comment2.params=c
+comment2.target=void\ neighborCheck(Cell)
+comment2.text=\r\n\ takes\ in\ the\ current\ row\ and\ collumn\ of\ a\ cell\ that\ we're\ are\ checking\ and\ checks\ for\ \r\n\ living\ cells\ around\ the\ cell\ we\ are\ checking\ (depends\ on\ the\ checkLocation\ method\ to\ determine\ if\ a\ cell\ is\ in\ or\ out\ of\ bounds).\r\n\ \r\n\ @param\ Cell\r\n
+comment3.params=
+comment3.target=void\ neighborCellCount()
+comment3.text=\r\n\ counts\ the\ number\ of\ neighbors\ that\ a\ cell\ has\ and\ sets\ it\ in\ the\ cell\r\n\ relies\ on\ the\ neighborCheck\ method\ to\ work\r\n\ \r\n\ @param\ -\ no\ parameters\r\n
+comment4.params=row\ col
+comment4.target=int\ getCellAtXYNumNeighbors(int,\ int)
+comment4.text=\r\n\ returns\ the\ number\ of\ neighbors\ that\ a\ specific\ cell\ in\ a\ certain\ location\ in\ the\ cellStorage\ 2d\ array\ has\r\n\ \r\n\ @param\ int,\ int\r\n
+comment5.params=rules
+comment5.target=void\ applyRules(java.util.ArrayList)
+comment5.text=\r\n\ reads\ through\ the\ entire\ cell\ 2d\ array\ and\ applis\ the\ rules\ that\ are\ appropriate\ for\ every\ cell\r\n\ \r\n\ @param\ ArrayList\ of\ Rules\r\n\ \r\n
+comment6.params=
+comment6.target=java.lang.String\ toString()
+comment6.text=\r\n\ toString\ method\ that\ prints\ the\ cellStorage\ 2d\ array\ in\ an\ easey\ to\ view\ format\r\n
+numComments=7

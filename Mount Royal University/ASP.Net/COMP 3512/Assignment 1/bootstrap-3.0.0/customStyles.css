@@ -1,0 +1,79 @@
+#nameBlock {
+    display:block;
+    float:left;
+    width:auto;
+    height:auto;
+    color:#999999;
+    vertical-align:middle;
+    padding-top:5px;
+    padding-right:15px;
+    padding-bottom:5px;
+}
+
+.topSpacing {
+    display: block;
+    width: 100%;
+    height: 3em;
+}
+
+.noLeftPadding {
+    padding-left:0;
+}
+
+.noPadding {
+    padding:0;
+}
+
+.noMargins {
+    margin:0 0 0 0;
+}
+
+.boldText {
+    font-weight: bold;
+}
+
+.leftPadEightPix {
+    padding-left:8px;
+}
+
+.blueLinks {
+    color: #428bca;
+    font-weight:bold;
+}
+
+.blueLinks:hover {
+    color: #223456;
+}
+
+.singlePaintingByArtist {
+    text-align:center;
+    margin-right:3em;
+    margin-bottom:1em;
+    min-width:220px;
+}
+
+.singlePaintingByArtistIMG {
+    display:block; 
+    margin-left: auto; 
+    margin-right:auto;
+}
+
+.overFlow {
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}
+
+.redPrice {
+    color:red;
+    font-weight:bold;
+}
+
+.modalPic {
+    display:block;
+    width:auto;
+    max-width:100%;
+    height:auto;
+    margin-left:auto;
+    margin-right:auto;
+}

@@ -1,0 +1,43 @@
+
+              <p><small>Click the ID or Title to view the request individually.</small></p>
+              <p><small>Press a <span class="searchColour">Header</span> once to sort by category descending, again to sort in ascending.</small></p>
+              <p><small>Search again for quick results.</small></p>
+                <div class="panel panel-default noMargins">
+                  <small>
+                  <!-- Table -->
+                  <table class="tableSorter table noMargins">
+                      <thead>
+                        <tr  style="background-color: #428BCA; color: #FFF;">
+                          <th>
+                            ID
+                          </th>
+
+                            <th id="requestTitle">
+                              Title
+                            </th>
+
+                            <th id="requestName">
+                              Submitted By
+                            </th>
+
+                            <th>
+                              Email
+                            </th>
+
+                            <th id="requestCreation">
+                              Creation Date
+                            </th>
+
+                            <th id="requestState">
+                              State
+                            </th>
+                          </tr>
+                      </thead>
+                      
+                      <tbody><tr>               <td><a href="singleProgram.php?programRequestID=75&type=create-program">75</a></td>            <td><a href="singleProgram.php?programRequestID=75&type=create-program">Bachelor of .NET</a></td>      <td class="requestName">Ricardo Hoar</td>  <td><a href="mailto:rhoar@mtroyal.ca?Subject=Bachelor of .NET">rhoar@mtroyal.ca</a></td>  <td class="requestCreation">2014-10-07 07:20:48</td>  <td class="requestState">Complete</td>                             </tr><tr>               <td><a href="singleProgram.php?programRequestID=77&type=create-program">77</a></td>            <td><a href="singleProgram.php?programRequestID=77&type=create-program">Bachelor of Web Development</a></td>      <td class="requestName">Ricardo Hoar</td>  <td><a href="mailto:rhoar@mtroyal.ca?Subject=Bachelor of Web Development">rhoar@mtroyal.ca</a></td>  <td class="requestCreation">2014-10-07 20:15:59</td>  <td class="requestState">in-progress</td>                             </tr>
+                            </tbody>
+                          </table>        
+                        </small>    
+                      </div>
+                    <!-- end of panel-->
+                    

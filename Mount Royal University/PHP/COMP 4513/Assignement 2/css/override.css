@@ -1,0 +1,182 @@
+body {
+	padding: 0;
+	background-image: url("../images/mru_wallpaper_1920x1200-138k.jpg");
+	background-position: bottom right;
+	background-repeat: no-repeat;
+	background-color: #021d3a;
+	background-size: 100% auto;
+	margin: 0;
+}
+
+label {
+	font-weight: 500;
+}
+
+textarea {
+    resize: none;
+}
+
+.relative {
+	 display:block;
+}
+.bold {
+	font-weight: bold;
+}
+
+.fullWidth {
+	width: 100%;
+	min-width: 25px;
+}
+
+.noPadding {
+	padding: 0;
+}
+
+.noRightPadding {
+	padding-right: 0;
+}
+
+.noMargins {
+	margin: 0;
+}
+
+.noTopMargin {
+	margin-top: 0;
+}
+
+.noTopPadding {
+	padding-top: 0;
+}
+
+.noLeftRightPadding {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.medPadding {
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.topMenuShrunkPadding {
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.noBackground {
+	background: transparent;
+}
+
+.roundCorners {
+	border-radius: 4px;
+}
+
+.navbar > .container .navbar-brand {
+	margin-left: 0;
+}
+
+/*Overwrite for h1 tags on createRequest*/
+.createReqTag {
+	font-size: 25px;
+}
+
+@media screen and (min-width: 768px) {
+	.jumbotron h1 {
+					font-size: 25px;
+				  }
+}
+
+@media screen and (min-width: 768px) {
+	.container .jumbotron {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+.inputChoice {
+	font-size: 15px;
+}
+
+.orangeText {
+	color: #f0ad4e;
+}
+
+@media screen and (max-width: 991px){.requestName{display:none;}}
+
+@media screen and (max-width: 660px){.requestCreation{display:none;}}
+
+@media screen and (max-width: 466px){.requestState{display:none;}}
+
+@media screen and (max-width: 551px){.requestTitle{display:none;}}
+
+/*ID request___'s are used for the search results to be a bit better. Couldnt use classes on the sorting...*/
+@media screen and (max-width: 991px){#requestName{display:none;}}
+
+@media screen and (max-width: 660px){#requestCreation{display:none;}}
+
+@media screen and (max-width: 466px){#requestState{display:none;}}
+
+@media screen and (max-width: 551px){#requestTitle{display:none;}}
+
+@media (min-width: 768px) {#maxSearchWidth {max-width: 150px;}}
+
+@media screen and (max-width: 1200px){.smallTopMargin{margin-top: 10px;}}
+
+.alertBox {
+	display: block;
+	width: 330px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+.searchColour {
+	color: #428bca;
+}
+
+.invisible {
+	display: none;
+}
+
+.rightButton {
+	display: block;
+	float: right;
+}
+
+.leftButton {
+	display: block;
+	float: left;
+}
+
+.formPagingButtonPadding {
+	margin-top: 15px;
+}
+
+.clearAll {
+	clear: both;
+}
+
+.noListStyle {
+	list-style-type: none;
+}
+
+/*table sorting header override*/
+body > div:nth-child(3) > div > div > small > table {
+	}	
+
+body > div:nth-child(3) > div > div > small > table > thead > tr > th {
+	color: #fff;
+	background-color: #428bca;
+	font-weight: normal;
+}
+
+.leftRound {
+	border-top-left-radius: 4px;
+}
+
+.rightRound {
+	border-top-right-radius: 4px;
+}

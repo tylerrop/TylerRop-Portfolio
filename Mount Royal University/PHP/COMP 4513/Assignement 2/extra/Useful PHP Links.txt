@@ -1,0 +1,5 @@
+Useful PHP Links
+
+Master pages: http://board.phpbuilder.com/showthread.php?10370125-PHP-Template-or-Master-Page
+
+Login 3 Step Tutorial: http://www.phpeasystep.com/phptu/6.html
